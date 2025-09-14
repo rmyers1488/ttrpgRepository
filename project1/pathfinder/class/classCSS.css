@@ -1,6 +1,8 @@
+
 /*flexbox sidebar/image container*/
 .flexContainer {
 	display:flex;
+	margin-top: 10px;
 }
 
 /*sidebar*/
@@ -13,13 +15,14 @@
 	width:20px;
 	height: 20px;
 }
-#sideBarButton {
+.sideBarButton {
 	border-top: 3px solid black;
 	border-right: 3px solid black;
-	/*	border-width:3px 3px 3px 0;*/
+/*	border-width:3px 3px 3px 0;*/
 	display: inline-block;
-	padding: 3px;
-	margin-left: 5px;
+	margin:auto;
+	
+	
 }
 .sideBarButtonClose {
 	transform: rotate(45deg);
@@ -50,7 +53,7 @@
 }
 
 /*logos*/
-.logos {
-/*	margin-right: auto;*/
+.description {
 	margin-left: 1em;
+	margin-right: 1em;
 }

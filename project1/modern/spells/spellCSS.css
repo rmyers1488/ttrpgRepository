@@ -1,0 +1,68 @@
+﻿/*flexbox sidebar/image container*/
+.flexContainer {
+    display: flex;
+}
+
+/*sidebar*/
+.sideBar {
+    width: fit-content;
+    margin-top: 10px;
+}
+
+.sideBarButtonOutside {
+    border: 3px solid black;
+    border-radius: 180px;
+    width: 20px;
+    height: 20px;
+}
+
+.sideBarButton {
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+    /*	border-width:3px 3px 3px 0;*/
+/*    display: inline-block;*/
+/*    padding: 3px;*/
+    
+}
+
+.sideBarButtonClose {
+/*    transform: rotate(45deg);*/
+}
+
+.sideBarButtonOpen {
+/*    transform: rotate(235deg);*/
+}
+
+.edition {
+}
+
+/*menus*/
+.list {
+    list-style: none;
+    background-color: lightgray;
+    padding: 1em;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 1.3em;
+    width: 7em;
+}
+
+.hidden {
+    display: none;
+}
+
+.expand {
+    font-size: 1.2em;
+}
+/*spellblock*/
+.spellBlock {
+    margin-left:1em;
+}
+.division {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    text-transform: uppercase;
+}

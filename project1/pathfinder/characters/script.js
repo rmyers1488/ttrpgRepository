@@ -21,6 +21,8 @@ $('#modernMagic').on('click', function () {
 })
 //menu hide/display
 $('.sideBarButtonOutside').on('click', function () {
+    $('#sideBarButton').toggleClass('sideBarButtonOpen');
+    $('#sideBarButton').toggleClass('sideBarButtonClose');
     $('.list').toggle();
     $('.edition').toggle();
     //$('this').addClass('sideBarButtonOpen');

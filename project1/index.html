@@ -10,63 +10,54 @@
 </head>
 
 <body>
-	<div class="navbar">
-		<div class="dropdown">
-			<button class="dropbtn">Characters
-				<i class="fa fa-caret-down"></i>
-			</button>
-            <div class="dropdown-content">
-                <a href='Arcanist/arcanist.html'>Arcanist</a>
-                <a href="Gunslinger/Gunslingers.html">Gunslinger</a>
-            </div>
-		</div>
-		<div class="dropdown">
-			<button class='dropbtn'>Equipment
-				<i class='fa fa-caret-down'></i>
-			</button>
-			<div class="dropdown-content">
-				<a href='items/firearms.html'>Firearms</a>
-				<a href='items/weapons.html'>Weapons</a>
-			</div>
-		</div>
-	</div>
+	
     <div id="wrapper">
 
         <header>
             <h1>A selection of characters, items and monsters for D&amp;D.</h1>
         </header>
 
-        <!--<button id="characters">characters</button>-->
-        <!--            classes-->
-        <!--<input type="button" id="character" value="Characters">-->
-        <dkiv id="character">Characters</dkiv>
-        <ul class="characterTable">
+        <div class="flexContainer">
+            <div class="sideBar">
+                <div class="sideBarButtonOutside">
+                    <span id="sideBarButton" class="sideBarButtonClose"></span>
+                </div>
+                <p class="edition">Pathfinder (D&amp;D 3.75e</p>
+                <ul class="list">
+                    <div id="pathCharacter" class="title">Characters</div>
 
+                    <li class="characterLI hidden"><a href="pathfinder/characters/Arcanist/arcanist.html">Arcanists</a></li>
+                    <li class="characterLI hidden">Gunslingers</a></li>
+                    <li class="characterLI hidden">Sorcerers</a></li>
+                    <li class="characterLI hidden">Summoners</a></li>
+                    <li class="characterLI hidden">Vigilantes</a></li>
+                    <!--        beastiary-->
+                </ul>
 
-            <li><a href="Arcanist/arcanist.html">Arcanists</a></li>
-            <li><a href="Gunslinger/Gunslingers.html">Gunslingers</a></li>
-            <li><a href="Sorcerer/Sorcerers.html">Sorcerers</a></li>
-            <li><a href="Summoner/Summoner.html">Summoners</a></li>
-            <li><a href="Vigilante/Vigilante.html">Vigilantes</a></li>
-            <!--        beastiary-->
-        </ul>
+                <ul class="list">
+                    <div id="pathEquipment" class="title">Equipment</div>
+                    <li class="equipmentLI hidden">Weapons</a></li>
+                    <li class="equipmentLI hidden"><a href="pathfinder/items/firearms.html">Firearms</a></li>
+                </ul>
 
-        <ul>
-
-            <li><a href='items/weapons.html'>Weapons</a></li>
-            <li><a href="items/firearms.html">Firearms</a></li>
-        </ul>
-        <ul>
-
-            <li><a href="MagicItems/body-slot.html">Body Slot</a></li>
-        </ul>
-
-
-        <ul>
-
-            <li><a href="Classes/Governess.html">Governess</a></li>
-        </ul>
-
+                <ul class="list">
+                    <div id="pathClass" class="title">Class Archtypes</div>
+                    <li class="classLI hidden"><a href="pathfinder/class/Governess.html">Governess</a></li>
+                </ul>
+            
+                <p class="edition">d20Modern</p>
+                <ul id="list" class="list">
+                    <div id="modernMagic" class="title">Magic Spells</div>
+                    <li class="spellLI hidden"><a href="modern/spells/encampment.html">
+                        Homeless Encampment</a></li>
+                </ul>
+                
+            </div>
+            <div class="logos">
+                <img src="PathfinderLogo.png" />
+                <img src="d20Modern.jpg" />
+            </div>
+        </div>
         <script src="jquery-3.7.1.min.js"></script>
         <script src="script.js"></script>
 

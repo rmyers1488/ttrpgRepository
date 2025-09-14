@@ -6,18 +6,18 @@ $(function() {
 //individual menu hide/display
 $("#pathCharacter").on('click', function () {
     //alert('click');
-    $('.characterLI').toggle();
+    $('.pathCharacterLI').toggle();
 });
 
 $('#pathEquipment').on('click', function () {
-    $('.equipmentLI').toggle();
+    $('.pathEquipmentLI').toggle();
 });
 $('#pathClass').on('click', function () {
-    $('.classLI').toggle();
+    $('.pathClassLI').toggle();
         
 });
 $('#modernMagic').on('click', function () {
-    $('.spellLI').toggle();
+    $('.modernSpellLI').toggle();
 })
 //menu hide/display
 $('.sideBarButtonOutside').on('click', function () {

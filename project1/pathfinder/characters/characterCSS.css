@@ -1,3 +1,10 @@
+header{
+    
+}
+
+body{
+    
+}
 /*flexbox sidebar/image container*/
 .flexContainer {
 	display:flex;
@@ -6,6 +13,7 @@
 /*sidebar*/
 .sideBar {
 	width:fit-content;
+	margin-top:10px;
 }
 .sideBarButtonOutside {
 	border:3px solid black;
@@ -13,14 +21,19 @@
 	width:20px;
 	height: 20px;
 }
-#sideBarButton {
+.sideBarButton {
 	border-top: 3px solid black;
 	border-right: 3px solid black;
-	/*	border-width:3px 3px 3px 0;*/
-	display: inline-block;
-	padding: 3px;
-	margin-left: 5px;
+	width: 10px;
+	margin-left: 25%;
+	margin-top: 25%;
 }
+/*.sideBarButtonSide{
+	border-right: 3px solid black;
+	width: 10px;
+	margin-left:25%;
+	margin-top: 25%;
+}*/
 .sideBarButtonClose {
 	transform: rotate(45deg);
 }
@@ -49,8 +62,15 @@
 	display: none;
 }
 
-/*logos*/
-.logos {
+/*character*/
+.characterData {
 /*	margin-right: auto;*/
-	margin-left: 1em;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+.statBlock {
+	list-style: none;
+	margin-left: -2.5em;
 }
