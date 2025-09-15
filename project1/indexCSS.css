@@ -45,12 +45,13 @@
 	width:7em;
 }
 
-.hidden {
+/* .hidden {
 	display: none;
-}
+} */
 
 /*logos*/
 .logos {
 /*	margin-right: auto;*/
 	margin-left: 1em;
+
 }
