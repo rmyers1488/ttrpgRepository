@@ -77,9 +77,14 @@ $('#coatPepperbox').hover(function () {
 $('#lightPepperbox').hover(function () {
     $('#lightPepperBoxInfo').fadeIn('1000');
 }, function () {
-    $('#lightPepperBoxInfo').fadeOut('500';
+    $('#lightPepperBoxInfo').fadeOut('500');
 });
-$('#giantPistol').hover(function () {
+// $('#ligtPepperbox').hover(function () {
+//     $('#lightPepperBoxInfo').fadeIn('1000');
+// }, function () {
+//     $('#lightPepperBoxInfo').fadeOut('500';
+// });
+$('#giantPihstol').hover(function () {
     $('#giantPistolInfo').fadeIn('1000');
 }, function () {
     $('#giantPistolInfo').fadeOut('500');
@@ -98,4 +103,5 @@ $('#heavyMusket').hover(function () {
     $('#heavyMusketInfo').fadeIn('1000');
 }, function () {
     $('#heavyMusketInfo').fadeOut('500');
+
 });
