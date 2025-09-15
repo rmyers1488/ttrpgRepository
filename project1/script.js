@@ -1,6 +1,9 @@
 // JavaScript source code
 $(function() {
     alert('begin');
+    $('.characterLI').toggle();
+    $(".equipmentLI").toggle();
+    $(".classLI").toggle();
 });
 
 //individual menu hide/display
@@ -68,3 +71,4 @@ $("#modernMagic").hover(function () {
             'font-size': '1.3em', 'width': '7em'
         });
     });
+
