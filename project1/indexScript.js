@@ -4,7 +4,6 @@ $('#modernLogo').hover(function () {
 });
 
 $('#pathLogo').hover(function () {
-
     $(this).effect("scale", {
         direction: "horizonta", origin: ["middle"], percent: '80%', scale: "content"
     }, { queue: false });
@@ -13,3 +12,4 @@ $('#pathLogo').hover(function () {
         direction: "horizonta", origin: ["middle"], percent: '125%', scale: "content"
     }, { queue: false});
 });
+
