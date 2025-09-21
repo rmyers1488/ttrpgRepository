@@ -3,7 +3,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <link href="menuCSS.css" rel="stylesheet" />
     <link href="indexCSS.css" rel="stylesheet">
     <title>index</title>
 </head>
@@ -13,55 +14,89 @@
     <div id="wrapper">
 
         <header>
-            <h1>A selection of characters, items and monsters for D&amp;D.</h1>
+            <h1>A selection of dcharacters, items and monsters for D&amp;D.</h1>
         </header>
 
         <div class="flexContainer">
             <div class="sideBar">
-                <div class="sideBarButtonOutside">
-                    <span id="sideBarButton" class="sideBarButtonClose"></span>
+                <div class="sideBarButtonOutside hidden">
+                    <span id="sideBarButton" class="sideBarButtonRight"></span>
                 </div>
-                <p class="edition">Pathfinder (D&amp;D 3.75e</p>
+                <p class="edition">Pathfinder (D&amp;D 3.75e)</p>
                 <ul class="list">
                     <div id="pathCharacter" class="title">Characters</div>
 
-                    <li class="characterLI"><a href="pathfinder/characters/Arcanist/arcanist.html">Arcanists</a></li>
-                    <li class="characterLI">Gunslingers</a></li>
-                    <li class="characterLI">Sorcerers</a></li>
-                    <li class="characterLI">Summoners</a></li>
-                    <li class="characterLI">Vigilantes</a></li>
+                    <li class="pathCharacterLI"><a href="pathfinder/characters/Arcanist/arcanist.html">Arcanists</a></li>
+                    <li class="pathCharacterLI">Gunslingers</a></li>
+                    <li class="pathCharacterLI">Sorcerers</a></li>
+                    <li class="pathCharacterLI">Summoners</a></li>
+                    <li class="pathCharacterLI">Vigilantes</a></li>
                     <!--        beastiary-->
                 </ul>
 
                 <ul class="list">
                     <div id="pathEquipment" class="title">Equipment</div>
-                    <li class="equipmentLI">Weapons</a></li>
-                    <li class="equipmentLI"><a href="pathfinder/items/firearms.html">Firearms</a></li>
+                    <li class="pathEquipmentLI">Weapons</a></li>
+                    <li class="pathEquipmentLI"><a href="pathfinder/items/firearms.html">Firearms</a></li>
                 </ul>
 
                 <ul class="list">
                     <div id="pathClass" class="title">Class Archtypes</div>
-                    <li class="classLI"><a href="pathfinder/class/Governess.html">Governess</a></li>
+                    <li class="pathClassLI">
+                        <a href="pathfinder/class/Governess.html">Governess</a>
+                    </li>
                 </ul>
-            
+                <ul class="list">
+                    <div id="pathMagicItem" class="title">Magic Items</div>
+                    <li class="pathMagicItemLI">
+                        <a href="pathfinder/magicItems/scorpiansGlove.html">
+                            Scorpians Glove
+                        </a>
+                    </li>
+                </ul>
+
                 <p class="edition">d20Modern</p>
+                <ul class="list">
+                    <div id="modernCharacter" class="title">Characters</div>
+                    <li class="modernCharacterLI">
+                        <a href="modern/characters/jamisonSpecialAffectMagi.html">
+                            Jamison, Special Affect Magi
+                        </a>
+                    </li>
+                </ul>
+                <ul class="list">
+                    <div id="modernRace" class="title">Races</div>
+                    <li class="modernRaceLI">
+                        <a href="modern/races/yuki-onna.html">Yuki-Onna</a></li>
+                </ul>
                 <ul id="list" class="list">
                     <div id="modernMagic" class="title">Magic Spells</div>
-                    <li class="spellLI"><a href="modern/spells/encampment.html">
-                        Homeless Encampment</a></li>
+                    <li class="modernSpellLI">
+                        <a href="modern/spells/encampment.html">
+                            Homeless Encampment
+                        </a>
+                    </li>
+                    <li class="modernSpellLI">
+                        <a href="modern/spells/campsight.html">
+                            Campground
+                        </a>
+                    </li>
                 </ul>
-                
+
             </div>
             <div class="logos">
-                <img src="PathfinderLogo.png" />
-                <img src="d20Modern.jpg" />
+                <div id="pathLogoBox">
+                    <img src="PathfinderLogo.png" id="pathLogo" />
+                </div>
+
+                <img src="d20Modern.jpg" id="modernLogo" />
             </div>
         </div>
         <script src="jquery-3.7.1.min.js"></script>
-        <script src="script.js"></script>
+        <script src="jquery-ui.min.js"></script>
+        <script src="indexScript.js"></script>
+        <script src="menuScript.js"></script>
 
 </body>
 
-
 </html>
-
