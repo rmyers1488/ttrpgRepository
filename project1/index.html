@@ -11,10 +11,12 @@
 
 <body>
 	
-    <div id="wrapper">
+    <div>
 
-        <header>
-            <h1>A selection of dcharacters, items and monsters for D&amp;D.</h1>
+        <div id="green" class="box"></div>
+        <header id="head">
+            <h1 id="title">A selection of characters, items and monsters for D&amp;D, 
+            Pathfinder, and d20Modern</h1>
         </header>
 
         <div class="flexContainer">
@@ -26,12 +28,8 @@
                 <ul class="list">
                     <div id="pathCharacter" class="title">Characters</div>
 
-                    <li class="pathCharacterLI"><a href="pathfinder/characters/Arcanist/arcanist.html">Arcanists</a></li>
-                    <li class="pathCharacterLI">Gunslingers</a></li>
-                    <li class="pathCharacterLI">Sorcerers</a></li>
-                    <li class="pathCharacterLI">Summoners</a></li>
-                    <li class="pathCharacterLI">Vigilantes</a></li>
-                    <!--        beastiary-->
+                    <li class="pathCharacterLI"><a href="pathfinder/characters/elenore.html">
+                        Elenore, the Enchanting Courtesian</a></li>
                 </ul>
 
                 <ul class="list">
@@ -54,6 +52,14 @@
                         </a>
                     </li>
                 </ul>
+                <ul class="list">
+                    <div id="pathBeast" class="title">Beastiary</div>
+                    <li class="pathBeastLI">
+                        <a href="pathfinder/beastiary/satchel.html">
+                            Satchel
+                        </a>
+                    </li>
+                </ul>
 
                 <p class="edition">d20Modern</p>
                 <ul class="list">
@@ -67,9 +73,10 @@
                 <ul class="list">
                     <div id="modernRace" class="title">Races</div>
                     <li class="modernRaceLI">
-                        <a href="modern/races/yuki-onna.html">Yuki-Onna</a></li>
+                        <a href="modern/races/yuki-onna.html">Yuki-Onna</a>
+                    </li>
                 </ul>
-                <ul id="list" class="list">
+                <ul class="list">
                     <div id="modernMagic" class="title">Magic Spells</div>
                     <li class="modernSpellLI">
                         <a href="modern/spells/encampment.html">
@@ -82,6 +89,12 @@
                         </a>
                     </li>
                 </ul>
+                <ul class="list">
+                    <div id="modernFXItem" class="title">FX Items</div>
+                    <li class="modernFXItemLI">
+                        <a href="modern/fxItems/babylonCandle.html">Babylon Candle</a>
+                    </li>
+                </ul>
 
             </div>
             <div class="logos">
@@ -92,10 +105,11 @@
                 <img src="d20Modern.jpg" id="modernLogo" />
             </div>
         </div>
-        <script src="jquery-3.7.1.min.js"></script>
-        <script src="jquery-ui.min.js"></script>
-        <script src="indexScript.js"></script>
-        <script src="menuScript.js"></script>
+    </div>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="javaScript/indexScript.js"></script>
+    <script src="javaScript/menuScript.js"></script>
 
 </body>
 
