@@ -1,48 +1,94 @@
 <!DOCKTYPE HTML>
 <html lang="en">
     <head>
+        <title>Governess</title>
         <meta charset="utf-8">
-        <link href="classCSS.css" rel="stylesheet">
+        <link href="pathfinderClassCSS.css" rel="stylesheet">
+        <link href="../../menuCSS.css" rel="stylesheet" />
+        <meta name="content" view="width=device-width">
         <title>The Governess</title>
     </head>
     <body id="wrapper">
         <a href="../../index.html">home</a>
         <div class="flexContainer">
             <div class="sideBar">
-                <div class="sideBarButtonOutside">
-                    <span class="sideBarButton sideBarButtonClose"></span>
+                <img src="../../PathfinderLogo.png" class="logo" />
+
+                <div class="sideBarButtonOutside hidden">
+                    <span id="sideBarButton" class="sideBarButtonRight"></span>
                 </div>
                 <p class="edition">Pathfinder (D&amp;D 3.75e</p>
                 <ul class="list">
                     <div id="pathCharacter" class="title">Characters</div>
-                    <li class="pathCharacterLI hidden"><a href="../characters/Arcanist/arcanist.html">Arcanists</a></li>
-                    <li class="pathCharacterLI hidden">Gunslingers</li>
-                    <li class="pathCharacterLI hidden">Sorcerers</li>
-                    <li class="pathCharacterLI hidden">Summoners</li>
-                    <li class="pathCharacterLI hidden">Vigilantes</li>
-                    <!--        beastiary-->
+                    <li class="pathCharacterLI">
+                        <a href="../characters/elenore.html">
+                            Elenore, the Enchanting Courtesian
+                        </a>
+                    </li>
                 </ul>
                 <ul class="list">
                     <div id="pathEquipment" class="title">Equipment</div>
-                    <li class="pathEquipmentLI hidden">Weapons</li>
-                    <li class="pathEquipmentLI hidden"><a href="../items/firearms.html">Firearms</a></li>
+                    <li class="pathEquipmentLI">Weapons</li>
+                    <li class="pathEquipmentLI"><a href="../items/firearms.html">Firearms</a></li>
                 </ul>
                 <ul class="list">
                     <div id="pathClass" class="title">Class Archtypes</div>
-                    <li class="pathClassLI hidden"><a href="Governess.html">Governess</a></li>
+                    <li class="pathClassLI"><a href="Governess.html">Governess</a></li>
+                </ul>
+                <ul class="list">
+                    <div id="pathMagicItem" class="title">Magic Items</div>
+                    <li class="pathMagicItemLI">
+                        <a href="../magicItems/scorpiansGlove.html">
+                            Scorpians Glove
+                        </a>
+                    </li>
+                </ul>
+                <ul class="list">
+                    <div id="pathBeast" class="title">Beastiary</div>
+                    <li class="pathBeastLI">
+                        <a href="../beastiary/satchel.html">
+                            Satchel
+                        </a>
+                    </li>
                 </ul>
 
                 <p class="edition">d20Modern</p>
                 <ul class="list">
+                    <div id="modernCharacter" class="title">Characters</div>
+                    <li class="modernCharacterLI">
+                        <a href="../modern/characters/jamisonSpecialAffectMagi.html">
+                            Jamison, Special Affect Magi
+                        </a>
+                    </li>
+                </ul>
+                <ul class="list">
+                    <div id="modernRace" class="title">Races</div>
+                    <li class="modernRaceLI">
+                        <a href="../../modern/races/yuki-onna.html">Yuki-Onna</a>
+                    </li>
+                </ul>
+                <ul class="list">
                     <div id="modernMagic" class="title">Magic Spells</div>
-                    <li class="modernSpellLI hidden">
+                    <li class="modernSpellLI">
                         <a href="../../modern/spells/encampment.html">Homeless Encampment</a>
+                    <li class="modernSpellLI">
+                        <a href="../../modern/spells/campsight.html">Campground</a>
+                </ul>
+                <ul class="list">
+                    <div id="modernFXItem" class="title">FX Items</div>
+                    <li class="modernFXItemLI">
+                        <a href="../../modern/fxItems/babylonCandle.html">Babylon Candle</a>
+                    </li>
+                    <li class="modernFXItemLI">
+                        <a href="../../modern/fxItems/snowMaiden'sCoat.html">Snow Maiden's Coat</a>
+                    </li>
+                    <li class="modernFXItemLI">
+                        <a href="../../modern/fxItems/wardedSuit.html">Warded Suit</a>
                     </li>
                 </ul>
 
             </div>
             <div class="description">
-                <img src="../../PathfinderLogo.png" />
                 <h1>The Governess</h1>
                 A Governess is a teacher of young children and a chaperone of older girls
                 and young women.
@@ -106,7 +152,7 @@
             </div>
         </div>
         <script src="../../jquery-3.7.1.min.js"></script>
-        <script src="pathClassScript.js"></script>
+        <script src="../../javaScript/menuScript.js"></script>
+        <!--<script src="../../javaScript/pathfinderClassScript.js"></script>-->
     </body>
-
 </html>

@@ -1,0 +1,21 @@
+
+/*flexbox sidebar/image container*/
+.flexContainer {
+	display:flex;
+	margin-top: 10px;
+}
+.sidebar {
+	margin-top: 1em;
+}
+.logo {
+	width: 100%;
+}
+.hidden {
+	display: none;
+}
+
+/*logos*/
+.description {
+	margin-left: 1em;
+	margin-right: 1em;
+}
