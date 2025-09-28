@@ -1,0 +1,26 @@
+/*flexbox sidebar/image container*/
+.flexContainer {
+	display:flex;
+}
+.sidebar {
+	margin-top: 1em;
+}
+.logo{
+    width: 100%;
+}
+
+.brake {
+    font-size:.8em;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    text-transform: uppercase;
+}
+
+.info {
+	margin-left:1em;
+	margin-right: 1em;
+}
+.statLine {
+    font-style:italic;
+    margin-left: 1em;
+}

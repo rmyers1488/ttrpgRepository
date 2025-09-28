@@ -1,0 +1,22 @@
+﻿/*flexbox sidebar/image container*/
+.flexContainer {
+    display: flex;
+}
+.sidebar {
+    margin-top: 1em;
+}
+.logo {
+    width: 100%;
+}
+/*.expand {
+    font-size: 1.2em;
+}*/
+/*spellblock*/
+.spellBlock {
+    margin-left:1em;
+}
+.division {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    text-transform: uppercase;
+}
