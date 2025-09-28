@@ -1,0 +1,12 @@
+﻿.flexContainer {
+    display:flex;
+}
+.sidebar {
+    margin-top: 1em;
+}
+#raceBlock {
+    margin-left: 1em;
+}
+.logo {
+    width: 100%;
+}
