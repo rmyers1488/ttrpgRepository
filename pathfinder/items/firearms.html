@@ -7,6 +7,7 @@
     <link href="../../CSS/lightboxCSS.css" rel="stylesheet" />
     <link href="../../CSS/menuCSS.css" rel="stylesheet" />
     <link href="../../CSS/itemCSS.css" rel="stylesheet" />
+    <link href="../../jquery/colorbox.css" rel="stylesheet" />
     
 
     <link href="../../jquery-ui-1.14.1.css" rel="stylesheet" />
@@ -344,19 +345,19 @@
                             <td>Special</td>
                         </tr>
                         <!--<tr>
-                            <td class="ftData"><span id="warhammerMusket">Musket, d</span></td>
-                            <td>1,600gp</td>
-                            <td>1d6</td>
-                            <td>1d8</td>
-                            <td>3d6</td>
-                            <td>20/x4</td>
-                            <td>30-ft</td>
-                            <td>1-2(5-ft)</td>
-                            <td>1</td>
-                            <td>6 lbs</td>
-                            <td>B &amp; P</td>
-                            <td></td>
-                        </tr>-->
+                <td class="ftData"><span id="warhammerMusket">Musket, d</span></td>
+                <td>1,600gp</td>
+                <td>1d6</td>
+                <td>1d8</td>
+                <td>3d6</td>
+                <td>20/x4</td>
+                <td>30-ft</td>
+                <td>1-2(5-ft)</td>
+                <td>1</td>
+                <td>6 lbs</td>
+                <td>B &amp; P</td>
+                <td></td>
+            </tr>-->
                         <tr id="pepperSword">
                             <td class="ftData"><span>Pepperbox Sword</span></td>
                             <td>2,200g</td>
@@ -576,19 +577,19 @@
                             <td>-</td>
                         </tr>
                         <!--<tr id="targetRevolver">
-                            <td class="ftData">Revolver, Target</a></td>
-                            <td>3,200g</td>
-                            <td>1d4</td>
-                            <td>1d6</td>
-                            <td>1d8</td>
-                            <td>20/x4</td>
-                            <td>30-ft</td>
-                            <td>1</td>
-                            <td>6</td>
-                            <td>2 lbs</td>
-                            <td>B &amp; P</td>
-                            <td>-</td>
-                        </tr>-->
+                <td class="ftData">Revolver, Target</a></td>
+                <td>3,200g</td>
+                <td>1d4</td>
+                <td>1d6</td>
+                <td>1d8</td>
+                <td>20/x4</td>
+                <td>30-ft</td>
+                <td>1</td>
+                <td>6</td>
+                <td>2 lbs</td>
+                <td>B &amp; P</td>
+                <td>-</td>
+            </tr>-->
                         <tr id="solaRevolver">
                             <td class="ftData">Saola Revolver</a></td>
                             <td>3,500g</td>
@@ -1283,8 +1284,8 @@
                         </tr>
                         <tr id="apacheRevolver">
                             <!--<td class="ftData"
-                                <a href="By Latente Flickr - Revolver system Dolne, cal. 7mm revolver d'Apache" class="lightbox">
-                                Pugno Revolver</a></td>-->
+                    <a href="By Latente Flickr - Revolver system Dolne, cal. 7mm revolver d'Apache" class="lightbox">
+                    Pugno Revolver</a></td>-->
                             <td class='ftData'>Apache Revolver</td>
                             <td>1,500g</td>
                             <td>1d3</td>
@@ -1426,6 +1427,17 @@
                         </tr>
                     </table>
                 </div>
+
+                <div>
+                    <a rel="gun" class="lightbox" href="../../images/CoachGun.jpg">Coach Gun</a>
+                    <a rel="gun" class="lightbox" href="../../images/English_-_Gun_Shield_-_Walters_511414.jpg">Gun Shield</a>
+                    <a rel="gun" class="lightbox" href="../../images/Glove_Pistol_-_www.joyofmuseums.com_-_International_Spy_Museum.jpg">Glove Pistol</a>
+                    <a rel="gun" class="lightbox" href="../../images/Palm_protector_pistol.jpg">Palm Pistol</a>
+                    <a rel="gun" class="lightbox" href="../../images/penGun.jpg">Pen Gun</a>
+                    <a rel="gun" class="lightbox" href="../../images/revolverSword.jpg">Revolver Sword</a>
+                    <a rel="gun" class="lightbox" href="../../images/six_shot_ring_gun_in_case1.jpg">Ring Revolver</a>
+                    <a rel="gun" class="lightbox" href="../../images/apacheRevolver.jpg">Apache Revolver</a>
+                </div>
                 <br />
                 <!--        ammo-->
                 <div class="medium-table-container">
@@ -1546,16 +1558,7 @@
             </div>
         </div>
     </div>
-    <div class="lightbox">
-        <a href="../../images/CoachGun.jpg">Coach Gun</a>
-        <a href="../../images/English_-_Gun_Shield_-_Walters_511414.jpg">Gun Shield</a>
-        <a href="../../images/Glove_Pistol_-_www.joyofmuseums.com_-_International_Spy_Museum.jpg">Glove Pistol</a>
-        <a href="../../images/Palm_protector_pistol.jpg">Palm Pistol</a>
-        <a href="../../images/penGun.jpg">Pen Gun</a>
-        <a href="../../images/revolverSword.jpg">Revolver Sword</a>
-        <a href="../../images/six_shot_ring_gun_in_case1.jpg">Ring Revolver</a>
-        <a href="../../images/apacheRevolver.jpg">Apache Revolver</a>
-    </div>
+    
     <div id="coatPepperBoxInfo" class="hidden tile">
         <div class="insideTile">
             <h3>Pepperbox Pistol, Coat</h3>
@@ -2576,9 +2579,9 @@
     <script src="../../jquery-3.7.1.min.js"></script>
     <script src="../../jquery-ui-1.14.1/jquery-ui.min"></script>
     <script src="../../javaScript/menuScript.js"></script>
-    <!--<script src="../../javaScript/itemScript.js"></script>-->
     <script src="../../javascript/firearmScript.js"></script>
-    <script src="../..javascript/lightbox.js"></script>
+    <script src="../../javascript/lightbox.js"></script>
+    <script src="../../jquery/jquery.colorbox-min.js"></script>"
 
 </body>
     
