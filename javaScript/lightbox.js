@@ -1,5 +1,7 @@
 // JavaScript source code
-concole.log('lightbox');
+$(function() {
+    concole.log('lightbox');
+});
 //<a class='lightbox' href="../images/CoachGun.jpg"></a>
 $('a.lightbox').click(function (e) {
     //hide scrollbars
@@ -80,3 +82,4 @@ $(document).ready(function () {
 //    current: "{current} of {total} firearm pictures"
 
 //});
+
