@@ -1,11 +1,10 @@
-
 $(function () {
     console.log('index start');
     console.log($(window).width() + 'px');
 });
 
 //logos
-$('#modernLogo').hoverIntent(function () {
+$('#modernLogo').hover(function () {
     $(this).effect('shake', { times: 3 }, '2000');
 });
 
@@ -24,19 +23,15 @@ console.log(windowWidth);
 setInterval(function () {
     //greenLeft = greenLeft + 10;
     if (greenTrue) { ++greenLeft; }
-    else { --greenLeft }
+    else { --greenLeft; }
     $('#green').css('left', greenLeft);
 
     //console.log($green.css('left'));
-    console.log($green.offset().left);
-    if ($green.css('left') >= windowWidth 
-        || $green.css('left') <= 0)
+    //console.log($green.offset().left);
+    if ($green.offset().left >= windowWidth 
+        || $green.offset().left <= 0)
     {
         greenTrue = !greenTrue;
     }
     //console.log(greenLeft);
 }, 200);
-
-//setInterval(function () {
-
-//}, 1000);

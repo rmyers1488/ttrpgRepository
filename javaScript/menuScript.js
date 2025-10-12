@@ -9,7 +9,7 @@ $(function () {
     //$('.modernRaceLI').hide();
     //$('.modernSpellLI').hide();
     //$('.modernFXItemLI').hide();
-    //$('.sideBarButtonOutside').show();
+    $('.sideBarButtonOutside').show();
     console.log('menu script');
 });
 
@@ -26,10 +26,8 @@ $('.sideBar > ul > li')
 
 //individual menu hide/display
 $("#pathCharacter").on('click', function () {
-    //alert('click');
     $('.pathCharacterLI').toggle();
 });
-
 $('#pathEquipment').on('click', function () {
     $('.pathEquipmentLI').toggle();
 });
@@ -148,28 +146,22 @@ $('#modernFXItem').hover(function () {
     });
 });
 
-//menu stays put
-//let $window = $('window'), $sideBar = $('.sideBar');
-//$window.scroll(function () {
-//    if (!$sideBar.hasClass('fixed') && ($window.scrollTop >
-//        $sideBar.offset().top)) {
-//        $sideBar.addClass("fixed").data('top', $sideBar.offset().top);
-//    }
-//});
-//$window.scroll(function () {
-//    if (!$sideBar.hasClass("fixed") &&
-//        ($window.scrollTop() > $sideBar.offset().top)) {
-//        $sideBar.addClass('fixed').data('top', $sideBar.offset().top);
-//        console.log('scroll fixed');
-//    } else if ($sideBar.hasClass('fixed') &&
-//        ($window.scrollTop() < $sideBar.data('top'))) {
-//        $sideBar.removeClass('fixed');
-//        console.log('scroll nofixed');
-//    }
-//});
-//back to top
-//$('a[href =#]').click(function () {
-//    $('.sideBar').animate({ scrollTop: 0, duration: '20000' });
-//    //
-//    e.preventDefault();
-//});
+//tooltip
+$(document).ready(function () {
+    $('.location').hover(function (event) {
+        let titleText = $(this).attr('title');
+        $(this)
+            .data('tipText', titleText)
+            .removeAttr('title');
+        $('<p class="tooltip"></p>')
+            .text(titleText)
+            .css({ 'top': (event.pageY - 10) + 'px', 'left': (event.pageX + 20) + 'px' })
+            .fadeIn('slow');
+    }, function () {
+        $(this).attr('title', $(this).data('tipText'));
+        $('.tooltip').remove();
+    }).mousemove(function (event) {
+        $('.tooltip')
+            .css({ 'top': (event.pageY - 10) + 'px', 'left': (event.pageX + 20) + 'px' });
+    })
+});

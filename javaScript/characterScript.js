@@ -9,7 +9,7 @@ $('.logo').hover(function () {
 });
 
 
-('#characterData > div:first').resizable({
+('#primary > div:first').resizable({
     handles: 's',
     minHeight: '25',
     maxHeight: '500',

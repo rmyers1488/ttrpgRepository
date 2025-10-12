@@ -1,16 +1,18 @@
 // JavaScript source code
 $(function () {
-    alert('magic item');
+    console.log('magic item');
 });
 
-$('.logo').hover(function () {
-    $(this).animate({ opacity: '0.5' }, 'slow');
-}, function () {
-    $(this).animate({ opacity: '2.0' }, 'slow');
+let size = $('#image').width();
+let newSize = $('#image').width() * 1.2;
+console.log(size, newSize);
+let enlarged = false;
+$('#image').click(function () {
+    //console.log('#image');
+    if (enlarged) {
+        $(this).animate({ width: newSize }, 1000);
+    } else {
+        $(this).animate({ width: size }, 1000);
+    }
+    enlarged = !enlarged;
 });
-//$('.logo').hover(function () {
-//    $(this).animate({ opacity: '0.5', }, 'slow');
-//}, function () {
-//    $(this).animate({ opacity: '2.0', }, 'slow');
-    
-//});

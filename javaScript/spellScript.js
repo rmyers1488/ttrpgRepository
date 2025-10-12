@@ -1,11 +1,4 @@
-// JavaScript source code
-$(function () {
-    alert('modern spell');
+let imageVisible = true;
+$('#image').click(function () {
+    $('#informationBox').toggle();
 });
-//element, accssed, function
-$('.logo').hover(function () {
-    //element, action, effect
-    $(this).animate({ opacity: '0.5' }, 'slow');
-}, function () {
-    $(this).animate({ opacity: '2.0' }, 'slow');
-})
