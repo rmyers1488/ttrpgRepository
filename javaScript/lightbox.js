@@ -1,6 +1,6 @@
 // JavaScript source code
 $(function() {
-    concole.log('lightbox');
+    console.log('lightbox');
 });
 //<a class='lightbox' href="../images/CoachGun.jpg"></a>
 $('a.lightbox').click(function (e) {
@@ -82,4 +82,5 @@ $(document).ready(function () {
 //    current: "{current} of {total} firearm pictures"
 
 //});
+
 
