@@ -5,18 +5,23 @@
 .sidebar {
 	margin-top: 1em;
 }
-.logo{
+/*.logo{
     width: 100%;
+}*/
+#image {
+    width: 200px;
+    float: left;
+    padding-right: 24px;
 }
-
 .brake {
     font-size:.8em;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     text-transform: uppercase;
+    
 }
 
-.info {
+.primary {
 	margin-left:1em;
 	margin-right: 1em;
 }

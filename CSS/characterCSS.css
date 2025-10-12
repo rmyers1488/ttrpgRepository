@@ -29,7 +29,7 @@
 }*/
 #statBlock li {
 	list-style:none;
-/*	margin-left: -2.5em;*/
+	margin-left: -2.5em;
 }
 
 #stats {
@@ -38,7 +38,7 @@
 /*	margin-bottom: 10px*/
 }
 /*//splitter box*/
-#characterData {
+#primary {
 	height: 99vh;
 	margin-left: 10px;
 /*	margin-top: 30px;*/
@@ -47,7 +47,7 @@
 /*splitter windows, two in this case, menu and info*/
 /*no padding or margin*/
 
-	#characterData .scrollSpace {
+	#primary .scrollSpace {
 		width: 100%;
 		height: 50%;
 		float: left;
@@ -70,16 +70,4 @@
 	padding-right: 10px;
 /*	padding: 0 5px;*/
 }
-/*first splitter pane, thead menu*/
-/*.sideBar {
-	overflow: hidden;
-}*/
-/*.sideBar .inside {
-	width: 300px;
-}
-.characterData {
-	overflow: auto;
-}
-.characterData inside {
-	padding:0 5px;
-}*/
+

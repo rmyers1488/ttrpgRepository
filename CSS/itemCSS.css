@@ -10,9 +10,11 @@
     width: 400px;
     margin-right: 16px;
 }
-/*.logo {
-    width: 100%;
-}*/
+.titleLogo {
+    width: 150px;
+    margin-left: 16px;
+    position: relative;
+}
 
 /*//info*/
 #stats {
@@ -20,13 +22,15 @@
 }
 
 /*tables*/
-#itemChart {
+#primary {
     overflow: auto;
     margin-left:1em;
 }
 #itemChat .inside{
     
 }
+
+
 .table-container{
     height:auto;
 /*    width:100%;*/

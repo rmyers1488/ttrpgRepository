@@ -44,15 +44,12 @@
 .hidden {
     display: none;
 }
-.flexContainer {
+/*.flexContainer {
     display:flex;
-}
-input[type=text] {
-    width: 90%;
+}*/
+
+#raceBlock {
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
-@media (min-width: 768px) {
-    #primary {
-        max-width: 650px;
-    }
-}

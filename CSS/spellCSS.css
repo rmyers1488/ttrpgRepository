@@ -2,13 +2,6 @@
 .flexContainer {
     display: flex;
 }
-/*.sidebar {
-    margin-top: 1em;
-}*/
-
-/*.expand {
-    font-size: 1.2em;
-}*/
 /*spellblock*/
 .spellBlock {
     margin-left:1em;
@@ -17,4 +10,31 @@
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     text-transform: uppercase;
+}
+#informationBox {
+    padding: 8px;
+    background-color: black;
+    display: none;
+    margin-left: 16px;
+    height: 184px;
+}
+#information {
+    position:relative;
+    border-radius: 10deg;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+/*    padding-left: 8px;*/
+/*    padding: 8px;*/
+}
+#image {
+    height: 200px;
+    float:left;
+    padding-right: 24px;
+}
+
+@media (min-width: 768px) {
+    #characterData {
+        max-width: 650px;
+    }
 }
