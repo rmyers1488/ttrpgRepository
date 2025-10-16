@@ -21,7 +21,24 @@
     margin-top: 5px;
     transform: rotate(225deg);
 }
-
+#accordian {
+    margin-left: -2.5em;
+    list-style: none;
+    width: 7em;
+}
+#accordian > li > ul {
+    list-style:none;
+}
+.menu ul li {
+/*.menu {*/
+    list-style: none;
+    font-size: .9em;
+    background-color: blue;
+}
+.menu ul li a {
+    color: hotpink;
+    text-decoration:none;
+}
 .edition {
 }
 .logo {
@@ -55,4 +72,5 @@ input[type=text] {
     #primary {
         max-width: 650px;
     }
+
 }
