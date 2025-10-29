@@ -42,7 +42,7 @@ $(document).ready(function () {
             event.preventDefault;
         }
     });
-
+    //05 validation pugin
     //validation, use validation JQuery plugin
     //$('#signUp form').validate({
     //    rules: {
@@ -68,6 +68,8 @@ $(document).ready(function () {
     //        label.text("OK!").addClass('valid');
     //    }
     //});
+
+    //06 max length indicator
     $('.maxlength')
         .after("<span></span>")
         .next()
@@ -99,12 +101,15 @@ $(document).ready(function () {
     //        });
     //    console.log('input clear');
     //});
+
+    //08 check all
     //$('.check-all:checkbox').change(function () {
     //    let group = ':checkbox[name=' $(this).attr('name') + ']';
     //    $(group).attr('checked', $(this).attr('cheked'));
     //    console.log('check all');
     //});
 
+    //09 inline editing
     //inline-editing
     //let rapture = function (which) {
     //    $(which).contents().filter(function () {
@@ -166,10 +171,68 @@ $(document).ready(function () {
     //            }
     //        );
     //    });
-    let choice = ['One', 'Two', 'Three', 'Four', 'Five'];
-    $('#complete').autocomplete(choice, {
-        autoFill: true,
-        selectFirst: true,
-        width: '240px'
-    });
+
+    //10 autocomplete
+    //let choice = ['One', 'Two', 'Three', 'Four', 'Five'];
+    //$('#complete').autocomplete(choice, {
+    //    autoFill: true,
+    //    selectFirst: true,
+    //    width: '240px'
+    //});
+    //10a uiautocomplete
+    //let choice = ['One', 'Two', 'Three', 'Four', 'Five'];
+    //$('#complete').autocomplete({
+    //    source: choice;
+    //});
+
+    //11 star rating
+    starRating.create('.stars');
 });
+
+//11 star rating
+let starRating = {
+    create: function (selector) {
+        $(selector).each(function () {
+            let $list = $('<div></div>');
+            $(this)
+                .find('input:radio')
+                .each(function (i) {
+                    let rating = $(this).parent().text();
+                    let $item = $('<a href="#"></a>')
+                        .attr('title', rating)
+                        .addClass(i % 2 == 1 ? 'rating-right' : '')
+                        .text(rating);
+
+                    starRating.addHandlers($item);
+                    $list.append($item);
+
+                    if ($(this).is(':checked')) {
+                        $item.prefAll().andSelf().addClass('rating');
+                    }
+                });
+            $(this).append($list).find('label').hide();
+        });
+    },
+    addHandlers: function (item) {
+        $(item).click(function (e) {
+            //star click
+            let $star = $(this);
+            let $allLinks = $(this).parent();
+            //set raio valu
+            $allLinks
+                .parent()
+                .find('input:radio[value=' + $star.text() + ']')
+                .attr('checked', true);
+            //set ratings
+            $allLinks.children().removeClass('rating');
+            //prevent default link click
+            e.preventDefault();
+        }).hover(function () {
+            //mouse over
+            $(this).prevAll().andSelf().addClass('rating-over');
+        }, function () {
+            //mouse out
+            $(this).siblings().andSelf().removeClass('rating-over');
+        });
+    }
+}
