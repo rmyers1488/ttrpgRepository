@@ -1,0 +1,109 @@
+﻿.sideBar {
+/*    width: 7em;*/
+    position: relative;
+/*    margin-top: 1em;*/
+}
+
+.sideBarButtonOutside {
+    border: 3px solid black;
+    border-radius: 180px;
+    width: 20px;
+    height: 20px;
+}
+
+#sideBarButton {
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+    /*	border-width:3px 3px 3px 0;*/
+    display: inline-block;
+    padding: 3px;
+    margin-left: 5px;
+    margin-top: 5px;
+    transform: rotate(225deg);
+}
+
+.edition {
+}
+.logo {
+    width: 7em;
+}
+
+
+/*menus*/
+/*.pathNav {*/
+/*    margin-left: -2em;*/
+/*}*/
+/*#pathMenu {*/
+/*    margin-left: -8em;*/
+    /*list-style-type: none;
+    padding: 0;
+    margin:0;
+
+}
+    #pathMenu ul {
+        cursor:pointer;
+        width: 7em;
+    }
+        #pathMenu ul a {
+            text-decoration: none;
+        }
+.modernNav {*/
+/*    margin-left: -2em;*/
+/*}
+#modernMenu {
+
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+    #modernMenu ul {
+        cursor: pointer;
+        width: 7em;
+    }
+
+        #modernMenu ul a {
+            text-decoration: none;
+        }*/
+
+
+/*#pathMenu > ul > a {*/
+/*    padding: 2px 10px;*/
+/*    padding*/
+    /*font-weight: bold;
+}
+#pathMenu  ul li {
+    cursor: auto;
+    border: 0;
+    padding: 0 14px;*/
+/*    background-color: #fff;*/
+/*}*/
+.list {
+    list-style: none;
+    background-color: lightgray;
+    padding: 1em;
+    width: fit-content;
+    border-radius: 10px;
+    margin:10px 0px 10px 0px;
+    width: 7em;
+}
+
+.title {
+    font-size: 1.3em;
+/*    width: 7em;*/
+}
+.hidden {
+    display: none;
+/*}
+ul a:link {
+    color: black;
+}
+ul a:hover {
+    color: black;
+}
+ul a:after {
+    color: black;
+}
+ul a:visited {
+    color: black;
+}*/

@@ -1,0 +1,76 @@
+#green{
+	position: relative;
+	background-color:green;
+	height: 10px;
+	width: 10px;
+}
+
+/*flexbox sidebar/image container*/
+.flexContainer {
+	display:flex;
+}
+
+/*sidebar*/
+.sideBar {
+	width:fit-content;
+}
+.sideBarButtonOutside {
+	border:3px solid black;
+	border-radius:180px;
+	width:20px;
+	height: 20px;
+}
+#sideBarButton {
+	border-top: 3px solid black;
+	border-right: 3px solid black;
+	/*	border-width:3px 3px 3px 0;*/
+	display: inline-block;
+	padding: 3px;
+/*	margin-left: 5px;*/
+	margin-left: 25%;
+	transform: rotate(225deg);
+}
+.sideBar > li {
+	list-style:none;
+}
+.edition {
+
+}
+
+/*menus*/
+.list {
+	list-style:none;
+	background-color: lightgray;
+	padding:1em;
+	width:145.6px;
+	border-radius:10px;
+}
+/*.list ul li a:after {*/
+a:after {
+	color: black;
+}
+
+.title {
+	font-size: 1.3em;
+	width:7em;
+}
+
+.hidden {
+	display: none;
+}
+
+/*logos*/
+.logos {
+/*	margin-right: auto;*/
+	margin-left: 1em;
+	position:relative;
+	max-width:contain;
+}
+#pathLogoBox {
+	height: 126.6px;
+	width: 410px;
+}
+#pathLogo {
+	margin-left: auto;
+	margin-right: auto;
+}

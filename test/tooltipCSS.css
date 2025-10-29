@@ -1,0 +1,29 @@
+﻿/*//style thead tool switch*/
+.tootip {
+/*doesn't show up    */
+    display: none;
+/*    lock in place*/
+    position: absolute;
+    border: 1px solid #333;
+    background-color: #ffed8a;
+    padding: 2px 6px
+}
+
+span.dialog.left {
+    background-position: 100% 0;
+}
+span.dialog.left span {
+    padding: 15px 0 0 17px;
+}
+span.dialog.above {
+    background-position: 0 100%;
+}
+span.dialog.above span {
+    padding: 13px 0 0 12px;
+}
+span.dialog.above.left {
+    background-position: 100% 100%;
+}
+span.dialog.above.left span {
+    padding: 13px 0 0 17px;
+}

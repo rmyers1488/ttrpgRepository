@@ -1,0 +1,42 @@
+﻿/*the light box*/
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+#lightbox {
+    position: fixed;
+}
+#lightboxLeftArrowBox {
+    height: 2em;
+    width: 2em;
+    left: 0;
+/*    top: 50%;*/
+    position: absolute;
+    background-color: pink;
+    
+}
+#lightboxLeftArrow {
+    border-top: 1px solid blue;
+    border-left: 1px solid blue;
+    rotate:90deg;
+    height: 20px;
+    width: 20px
+    
+}
+#lightboxRightArrowBox {
+    height: 2em;
+    width: 2em;
+    right: 0;
+    top: 50%;
+    position: fixed;
+    background-color: greenyellow;
+}
+#lightboxLeftArrow {
+    border-bottom: 1px solid blue;
+    border:right: 1px soldid blue;
+}
