@@ -4,16 +4,21 @@ $(function () {
     console.log($(window).width() + 'px');
 });
 
-//logos
-$('#modernLogo').hoverIntent(function () {
-    $(this).effect('shake', { times: 3 }, '2000');
-});
-
-$('#pathLogo').hover(function () {
-
-    $(this).animate({ height: '80%' }, '1000');
-}, function () {
-    $(this).animate({ height: '100%' }, '1000');
+//description
+$(document).ready(function () {
+    $(':input').blur(function () {//over the input
+        if ($(this).val().length == 0) { //unfilled field
+            $(this)
+                .addClass('error')
+                .after('<span class="error">Fill this field</span>');
+        }
+    });
+    $(':input').focus(function () {
+        $(this)
+            .removeClass('error')
+            .next('span')
+            .remove();
+    });
 });
 
 let $green = $('#green');
@@ -97,3 +102,32 @@ function addLine() {
     console.log(cartContents);
     template(newRow, cartContents).appendTo('#cart');
 };
+
+//sort from one container to another
+$('.selection').ready(function () {
+    $('.weaponTable > tr').draggable({
+        revert: 'invalid'
+    });
+    $('.itemList').droppable({
+        activeClass: 'highlight',
+        hoverClass: 'highlight-accept'
+    });
+});
+$('.itemList, .weaponTable').sortable({
+    connectWith: '.connected',
+    placeholder: 'ui-state-highlight',
+    receive: function (event, ui) { adopt(this) },
+    remove: function (event, ui) { orphan(this) }
+}).disableSelection();
+function adopt(which) { //element being dragged
+    if ($(which).hasClass('empty')) {
+        $(which).removeClass('empty').find('.empty').remove();
+    }
+}
+function orphan(which) {
+    fi($(which).children().length == 0) {
+        $(which)
+            .append($('<td class="empty">empty</li>'))
+            .addClass('empty');
+    }
+}
