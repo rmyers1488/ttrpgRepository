@@ -131,3 +131,13 @@ function orphan(which) {
             .addClass('empty');
     }
 }
+
+//loadd box
+$().ready(function () {
+    $('#loadBox a').click(function (e) {
+        let url = $(this).attr('href');
+        console.log(url);
+        $('#loadData').load(url);
+        e.preventDefault();
+    });
+});
