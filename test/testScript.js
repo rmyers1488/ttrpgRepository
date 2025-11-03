@@ -141,3 +141,11 @@ $().ready(function () {
         e.preventDefault();
     });
 });
+
+//auto complete
+$(document).ready(function () {
+    let items = ['candle', 'candle lamp', 'compass', 'chalk', 'fiddle'];
+    $('#itemList').autocomplete({
+        source: items
+    });
+});
