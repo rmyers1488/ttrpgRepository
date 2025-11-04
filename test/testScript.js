@@ -72,6 +72,7 @@ function template(row, cart) {
     row.find('.item_name').text(cart.name);
     row.find('.item_qty').text(cart.qty);
     row.find('.item_total').text(cart.total);
+    console.log(row);0
     return row;
 }
 
@@ -90,7 +91,7 @@ if ($.support.opacity) {
 }
 
 function addLine() {
-    console.log('click');dd
+    console.log('click');
     let itemName = document.querySelector('.name').value;
     let itemQty = document.querySelector('.qty').value;
     let itemTotal = document.querySelector('.total').value;
@@ -148,4 +149,5 @@ $(document).ready(function () {
     $('#itemList').autocomplete({
         source: items
     });
+
 });
