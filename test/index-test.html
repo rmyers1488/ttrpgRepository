@@ -18,11 +18,11 @@
         <div class="flexContainer">
             <div>
                 <table id="cart">
-                    <thead>
-                    <td>Name</td>
-                    <td>Qty.</td>
-                    <td>Total</td>
-                    </thead>
+                    <tr>
+                        <td>Name</td>
+                        <td>Qty.</td>
+                        <td>Total</td>
+                    </tr>
                     <tr class="template" style="display:none;">
                         <td><span class="item_name">Name</span></td>
                         <td><span class="item_qty">Quantity</span></td>
@@ -58,10 +58,10 @@
                     <table class="itemList connected">
                     </table>
                 </div>
-                
                 <div class="selection">
                     <div id="weaponSelection">
                         <table class="weaponTable connected">
+                            <div class="">
                             <tr>
                                 <td>Dagger</td>
                                 <td>2gp</td>
@@ -102,18 +102,95 @@
                 <input type="text" id="itemList" />
                 <input type="submit" value="Add!" />
             </div>
+            <div>
+                <div id="range">
+                    <form action="">
+                        <fieldset>
+                            <label for="min">Minimum</label>
+                            <select id="min" name="min">
+                                <option value="0">0</option>
+                                <option value="10">10</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                                <option value="40">40</option>
+                                <option value="50">50</option>
+                                <option value="60">60</option>
+                                <option value="70">70</option>
+                                <option value="80">80</option>
+                                <option value="90">90</option>
+                                <option value="100">100</option>
+
+                            </select>
+                            <br />
+                            <label for="max">Maximum</label>
+                            <select id="max" name="max">
+                                <option value="0">0</option>
+                                <option value="10">10</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                                <option value="40">40</option>
+                                <option value="50">50</option>
+                                <option value="60">60</option>
+                                <option value="70">70</option>
+                                <option value="80">80</option>
+                                <option value="90">90</option>
+                                <option value="100">100</option>
+                            </select>
+
+                        </fieldset>
+                    </form>
+                </div>
+                <table class="data">
+                    <!--weapon price-->
+                    <tr>
+                        <th>name</th>
+                        <th>price</th>
+                    </tr>
+                    <tr>
+                        <td>longswor</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>dagger</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>katana</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>wakizashi</td>
+                        <td>35</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!--drag and drop-->
+        <div class="area">
+            
+        </div>
+        <div id="imageGrid">
+            <img src="penGun.jpg" />
+            <img src="palm_protector_pistol.jpg" />
+            <img src="six_shot_ring_gun_in_case1.jpg" />
         </div>
 
+        <!--responsiv slide-->
+        <ul class="rslides">
+            <li><img src="penGun.jpg" /></li>
+            <li><img src="palm_protector_pisol.jpg" /></li>
+            <li><img src="revolverSword.jpg" /></li>
+        </ul>
 
         <script src="jquery-3.7.1.min.js"></script>
         <script src="jquery-ui.min.js"></script>
         <script src="jquery-hoverIntent-master/jquery.hoverIntent.min.js"></script>
         <script src="testScript.js"></script>
         <script src="jquery-ui-1.8.17.custom.min.js"></script>
+        <script src="responsiveslides.min.js"></script>
         <!--<script src="menuScript.js"></script>-->
         <!--<script src="tooltipJS.js"></script>-->
 
 </body>
-
 
 </html>

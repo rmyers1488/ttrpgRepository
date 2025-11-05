@@ -1,25 +1,74 @@
 
-$(function () {
-    console.log('index start');
-    console.log($(window).width() + 'px');
-});
+//$(function () {
+//    console.log('index start');
+//    console.log($(window).width() + 'px');
+//});
 
 //description
 $(document).ready(function () {
-    $(':input').blur(function () {//over the input
-        if ($(this).val().length == 0) { //unfilled field
-            $(this)
-                .addClass('error')
-                .after('<span class="error">Fill this field</span>');
-        }
+    //slider
+    let rangeSlider = $('<div></div>')
+        .slider({
+            min: 0;
+            max: 100;
+            step: 10;
+            values: [min, max],
+            range: true;
+            animate: true;
+            slide: function (e, ui) {
+                $(this)
+                    .parent()
+                    .find('#min')
+                    .val(ui.values[0]); //values: [min]
+                $(this)
+                    .parent()
+                    .find('#max')
+                    .val(ui.values[1]);
+            }
+        })
+        .before('<h3>Move the slider</h3>');
+    $('#valueRange').after(rangeSlider).hide();
+    //end slider
+
+    //drag and drop
+    $('#imageGrid > img').draggable({   //dragable images
+        revert: 'invalid'
     });
-    $(':input').focus(function () {
-        $(this)
-            .removeClass('error')
-            .next('span')
-            .remove();
+    $('.area').droppable({
+        activeClass: 'highlight',
+        hoverClass: 'highlight-accept',
+        drop: function (event, ui) {
+            puffRemove($(ui.draggable));
+        }
+    })
+    //end drag adn drop
+});
+//responsive slider
+$(function () {
+    $('.rslides').responsiveSlides({
+        auto: true;
+        pager: true;
+        nav: true;
     });
 });
+//end responsive slides
+//slider
+//function showCelebs() {
+//    min = $('#min').val();
+//    max = $('#max').val();
+//    $('.data tr').each(function () {
+//        let price = parseInt($(this).find('td:last').text().substring(1));
+//        if (price >= min && price <= max) {
+//            $(this).fadeIn();
+//        } else {
+//            $(this).fadeOut();
+//        }
+//    });
+//}
+$(function () {
+    $('dd')
+})
+//end slider
 
 let $green = $('#green');
 let greenLeft = $('#green').offset().left;
@@ -72,7 +121,6 @@ function template(row, cart) {
     row.find('.item_name').text(cart.name);
     row.find('.item_qty').text(cart.qty);
     row.find('.item_total').text(cart.total);
-    console.log(row);0
     return row;
 }
 
@@ -91,7 +139,7 @@ if ($.support.opacity) {
 }
 
 function addLine() {
-    console.log('click');
+    console.log('click');dd
     let itemName = document.querySelector('.name').value;
     let itemQty = document.querySelector('.qty').value;
     let itemTotal = document.querySelector('.total').value;
@@ -149,5 +197,5 @@ $(document).ready(function () {
     $('#itemList').autocomplete({
         source: items
     });
-
 });
+
