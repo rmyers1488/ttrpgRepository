@@ -1,10 +1,9 @@
 // JavaScript source code
 $(function () {
     console.log('item script');
+    $('.leftImages').hide();
 });
 
-console.log(position);
-console.log($('#titleLogo').offset().left);
 
 //$('.titleLogo').hover(function () {
 //    $(this).animate({ left: ,  } 
@@ -25,3 +24,16 @@ setInterval(function () {
     $('#titleLogo').css('left', position);
     //console.log($('#titleLogo').css('left'));
 }, 200);
+
+//image container
+$('.imageDisplay').on('click', function () {
+    $('.leftImages').toggle();
+})
+$('.image').on('click', function () {
+    console.log('clicker');
+    $('.rightImage').empty();
+    let img = document.createElement("img");
+    img.src = $(this).attr('src');
+    let src = document.querySelector('.rightImage');
+    src.appendChild(img);
+});
