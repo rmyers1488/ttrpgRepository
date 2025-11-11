@@ -1,37 +1,32 @@
-﻿<!DOCKTYPE HTML>
-<html lang="en">
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Fire Extinguisher</title>
+    <meta charset="utf-8" />
     <meta charset="utf-8">
-    <link href="../../CSS/spellCSS.css" rel="stylesheet">
+    <link href="../../CSS/raceCSS.css" rel="stylesheet">
     <link href="../../CSS/menuCSS.css" rel="stylesheet" />
-
+    <link href="../../css/lightboxCSS.css" rel="stylesheet" />
     <meta name="content" view="width=device-width">
-    <meta title="Fire Extinguisher" />
-    <meta author="R. Myers" />
-
+    <title>Minotaur</title>
 </head>
-<body id='wrapper'>
-    <div class="menu">
-        <a href="../../index.html">Home</a>
-    </div>
+<body>
+    <a href="../../index.html">home</a>
     <div class="flexContainer">
         <div class="sideBar">
 
-            <!--<img src="../../d20Modern.jpg" class="logo" />-->
-            <!--<img src="../../PathfinderLogo.png" class="logo" />-->
-
             <div class="sideBarButtonOutside hidden">
-                <span id="sideBarButton"></span>
+                <span id="sideBarButton" class="sideBarButtonRight"></span>
             </div>
-            <img src="../../PathfinderLogo.png" class="logo" />
+            <!--<ul class="pathNav">
+                <ul id="pathMenu">-->
 
+
+            <img src="../../PathfinderLogo.png" class="logo" />
             <ul id="pathMenu">
-                <!--<p class="edition">Pathfinder (D&amp;D 3.75e)</p>-->
                 <ul class="list">
                     <li id="pathCharacter" class="title">Characters</li>
-
-                    <li class="pathCharacterLI">
+                    <li class="pathCharacterLI" title="Arcanist 5, Enchanting Courtisan 3, Arcane Savant 3">
                         <a href="../../pathfinder/characters/elenore.html">
                             Elenore, the Enchanting Courtesian
                         </a>
@@ -39,12 +34,14 @@
                 </ul>
                 <ul class="list">
                     <li id="pathEquipment" class="title">Equipment</li>
-                    <li class="pathEquipmentLI">Weapons</a></li>
-                    <li class="pathEquipmentLI"><a href="../../pathfinder/items/firearms.html">Fireamrs</a></li>
+                    <li class="pathEquipmentLI">Weapons</li>
+                    <li class="pathEquipmentLI"><a href="../../pathfinder/items/firearms.html">Firearms</a></li>
                 </ul>
                 <ul class="list">
                     <li id="pathClass" class="title">Class Archtypes</li>
-                    <li class="pathClassLI"><a href="../../pathfinder/class/Governess.html">Governess</a></li>
+                    <li class="pathClassLI" title="Gunslinger Archtype">
+                        <a href="../../pathfinder/class/Governess.html">Governess</a>
+                    </li>
                 </ul>
                 <ul class="list">
                     <li id="pathMagicItem" class="title">Magic Items</li>
@@ -64,13 +61,11 @@
                 </ul>
             </ul>
             <img src="../../d20Modern.jpg" class="logo" />
-
             <ul id="modernMenu">
-
                 <!--<p class="edition">d20Modern</p>-->
                 <ul class="list">
                     <li id="modernCharacter" class="title">Characters</li>
-                    <li class="modernCharacterLI">
+                    <li class="modernCharacterLI" title="Smart Hero 3, Mage 5, Artificer 1">
                         <a href="../characters/jamisonSpecialAffectMagi.html">
                             Jamison, Special Affect Magi
                         </a>
@@ -79,20 +74,21 @@
                 <ul class="list">
                     <li id="modernRace" class="title">Races</li>
                     <li class="modernRaceLI">
-                        <a href="../races/yuki-onna.html">Yuki-Onna</a>
+                        <a href="yuki-onna.html">Yuki-Onna</a>
                     </li>
                 </ul>
                 <ul class="list">
                     <li id="modernMagic" class="title">Magic Spells</li>
                     <li class="modernSpellLI" title="Level 3 Conjuration">
-                        <a href="campsight.html">Campground</a>
+                        <a href="../spells/campsight.html">Campground</a>
                     </li>
                     <li class="modernSpellLI" title="Level 2 Evocation">
-                        <a href="encampment.html">Homeless Encampment</a>
+                        <a href="../spells/fireExtinguisher.html">Fire Extinguisher</a>
                     </li>
+
                     <li class="modernSpellLI" title="Level 3 Conjuration">
-                        <a href="fireExtinguisher.html">Fire Extinguisher</a>
-                    </li>
+                        <a href="../spells/encampment.html">Homeless Encampment</a>
+
                 </ul>
                 <ul class="list">
                     <li id="modernFXItem" class="title">FX Items</li>
@@ -114,30 +110,31 @@
                 </ul>
             </ul>
         </div>
+        <div id="raceBlock">
 
-        <div class="spellBlock">
-            <h2>Fire Extinguisher</h2>
-            <b>School</b> Evocation; <b>Level</b> Arcane 2. Divine 2
-            <div class="division">casting</div>
-            <b>Casting Time</b> Attack Action<br />
-            <b>Components</b> V, S
-            <div class="division">effect</div>
-            <b>Range</b> close (25 ft. + 5 ft/2 levels)<br />
-            <b>Effect</b> cloud of CO2, spreads 30 ft and is 5 ft high
-            <b>Duration</b>1 minute/level<br />
-            <b>Saving Throw</b> none; <b>Spell Resistance</b> none
-            <div class="division">description</div>
-            <p>
-                The spell Fire Extinguisher works by creating a low hanging cloud
-                of CO2. This will snuff out any open flame and hinder new flames.
-                Any open flame in the area of the spell is extinguised. Any fire
-                based attacks half damage. 
-            </p>
+            <h3 id="speciesImage">Minotaur Traits</h3>
+            <b>Large monstrous humanoid</b><br />
+            <b>Ability Modifiers:</b> +12 STR, +4 CON, -2 INT, -2 CHA<br />
+            <b>Extra Starting Hit Dice:</b> A Minotaur gains 4 bonus Hit Dice (4d8 hit points). The Minotaur's
+            Constitution Modifier applies to each Hit Die when determining hit points.<br />
+            <b>Base Speed:</b> 30 feet<br />
+            <b>Natura Armor Bonus:</b> Minotaurs have a thick hide and gain a +5 bonus to defense.<br />
+            <b>Attack Bonus:</b> Minotaurs gain a +3 species bonus on attack rolls.<br />
+            <b>Fighting Space:</b> As a large sized creature Minotaurs have a ten foot fighting space.<br />
+            <b>Low-Light Vision:</b> Minotaurs can see twice as far as a human in starlight, moonlight,
+            torchlight, and similar conditions of poor illumination. They retain the ability to
+            distinguish color and detail under these conditions.<br />
+            <b>Natura Weapon:</b> Minotaurs have a set of horns that grant a goar attack that deals a 1d10
+            Piercing damage.
+            <b>Bonus Feat:</b> Archaic Weapon Proficiency or Simple Weapon Proficiency<br />
+      
         </div>
     </div>
     <script src="../../jquery-3.7.1.min.js"></script>
-    <!--<script src="spellScript.js"></script>-->
-    <script src="../../javaScript/menuScript.js"></script>
+    <script src="../../jquery/jquery.colorbox-min.js"></script>"
 
+    <script src="../../javaScript/menuScript.js"></script>
+    <script src="../../javaScript/lightbox.js"></script>
+    <script src="../../javaScript/raceScript.js"></script>
 </body>
 </html>

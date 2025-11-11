@@ -1,12 +1,4 @@
-﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title>Kiwi Blitz Human Alteration</title>
-</head>
-<body>
-    <h2>Genetic Alteration</h2>
+﻿
     <div id="enhancements">
         All listed genetic modifications, whether derived from
         cybernetics or mutations, are treated as restricted: illegal.<br />
@@ -56,5 +48,3 @@
             <li>Webbed Digits</li>
         </ul>
     </div>
-</body>
-</html>
