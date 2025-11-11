@@ -1,0 +1,78 @@
+﻿.sideBar {
+/*    width: 7em;*/
+    position: relative;
+/*    margin-top: 1em;*/
+}
+
+.sideBarButtonOutside {
+    border: 3px solid black;
+    border-radius: 180px;
+    width: 20px;
+    height: 20px;
+}
+
+#sideBarButton {
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+    /*	border-width:3px 3px 3px 0;*/
+    display: inline-block;
+    padding: 3px;
+    margin-left: 5px;
+    margin-top: 5px;
+    transform: rotate(225deg);
+}
+#accordian {
+    margin-left: -2.5em;
+    list-style: none;
+    width: 7em;
+}
+#accordian > li > ul {
+    list-style:none;
+}
+.menu ul li {
+/*.menu {*/
+    list-style: none;
+    font-size: .9em;
+    background-color: blue;
+}
+.menu ul li a {
+    color: hotpink;
+    text-decoration:none;
+}
+.edition {
+}
+.logo {
+    width: 112px;
+}
+/*.list {
+    list-style: none;
+    background-color: lightgray;
+    padding: 1em;
+    width: fit-content;
+    border-radius: 10px;
+    margin:10px 0px 10px 0px;
+    width: 7em;
+}*/
+
+/*.title {
+    font-size: 1.3em;*/
+/*    width: 7em;*/
+/*}*/
+.hidden {
+    display: none;
+}
+.flexContainer {
+    display:flex;
+}
+input[type=text] {
+    width: 90%;
+}
+
+/*growl*/
+
+/*growl end*/
+@media (min-width: 768px) {
+    #primary {
+        max-width: 650px;
+    }
+}

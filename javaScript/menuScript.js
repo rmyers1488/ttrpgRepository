@@ -1,17 +1,30 @@
 // JavaScript source code
 $(function () {
-    //$('.pathCharacterLI').hide();
-    //$('.pathEquipmentLI').hide();
-    //$('.pathClassLI').hide();
-    //$('.pathMagicItemLI').hide();
-    //$('.pathBeastLI').hide();
-    //$('.modernCharacterLI').hide();
-    //$('.modernRaceLI').hide();
-    //$('.modernSpellLI').hide();
-    //$('.modernFXItemLI').hide();
     $('.sideBarButtonOutside').show();
     console.log('menu script');
+
+    //growl
+    $('#growl') // grap eleemnt growl
+        .find('.close')
+        .on('click', function () {
+            $(this)
+                .closest('.notice')
+                .animate({
+                    border: 'none',
+                    height: 0,
+                    marginBottom: 0,
+                    marginTop: '-6px',
+                    opacity: 0,
+                    paddingBottom: 0,
+                    paddigTop: 0,
+                    queue: false
+                }, 100, function () {
+                    $(this).remove()
+                });
+        });
+    //end growl
 });
+
 
 $(".logo").hover(function () {
     $(this).animate({ opacity: '0.5' }, 'slow');
@@ -21,38 +34,30 @@ $(".logo").hover(function () {
 
 //hide menu
 //li of ul of sideBar
-$('.sideBar > ul > li')
-    .hide();
+$('.list > li').filter(':not(:first-child)').hide();
+//$lastShown;
 
+//update hide/display, only reveil one at once
+$('.title').click(function () {
+    console.log('click');
+    console.log(this);
+    if ($(this).nextAll().is(':visible')) {
+        $('.list > li').filter(':not(:first-child)').hide();
+    } else {
+        $('.list > li').filter(':not(:first-child)').hide();
+        $(this).nextAll().toggle();
+    }
+
+});
 //individual menu hide/display
-$("#pathCharacter").on('click', function () {
-    $('.pathCharacterLI').toggle();
+$('#pathImage').on('click', function () {
+    console.log('toggle');
+    $('#pathMenu').toggle();
 });
-$('#pathEquipment').on('click', function () {
-    $('.pathEquipmentLI').toggle();
-});
-$('#pathClass').on('click', function () {
-    $('.pathClassLI').toggle();
-
-});
-$('#pathMagicItem').on('click', function () {
-    $('.pathMagicItemLI').toggle();
-});
-$('#pathBeast').on('click', function () {
-    $('.pathBeastLI').toggle();
+$('#modernImage').on('click', function () {
+    $('#modernMenu').toggle();
 })
-$('#modernCharacter').on('click', function () {
-    $('.modernCharacterLI').toggle();
-});
-$('#modernRace').on('click', function () {
-    $('.modernRaceLI').toggle();
-});
-$('#modernMagic').on('click', function () {
-    $('.modernSpellLI').toggle();
-});
-$('#modernFXItem').on('click', function () {
-    $('.modernFXItemLI').toggle();
-});
+
 //menu hide/display
 $('.sideBarButtonOutside').on('click', function () {
     $('.list').toggle();
@@ -62,89 +67,18 @@ $('.sideBarButtonOutside').on('click', function () {
         { duration: 0, queue: false });
 });
 
+//highlight side menu
+$('.title').hover(function () {
+    $(this).css({
+        'font-size': '1.5em', 'width': '6.05em',
+    });
+}, function () {
+    $(this).css({
+        'font-size': '1.3em', 'width': '7em',
+    });
+});
 
-//increase font size of side menu 
-$("#pathCharacter").hover(function () {
-    $(this).css({
-        'font-size': '1.5em', 'width': '6.05em'
-    });
-}, function () {
-    $(this).css({
-        'font-size': '1.3em', 'width': '7em'
-    });
-});
-$("#pathEquipment").hover(function () {
-    $(this).css({
-        'font-size': '1.5em', 'width': '6.05em'
-    });
-}, function () {
-    $(this).css({
-        'font-size': '1.3em', 'width': '7em'
-    });
-});
-$("#pathClass").hover(function () {
-    $(this).css({
-        'font-size': '1.5em', 'width': '6.05em'
-    });
-}, function () {
-    $(this).css({
-        'font-size': '1.3em', 'width': '7em'
-    });
-});
-$('#pathBeast').hover(function () {
-    $(this).css({
-        'font-size': '1.5em', 'width': '6.05em'
-    });
-}, function () {
-    $(this).css({
-        'font-size': '1.3em', 'width': '7em'
-    });
-});
-$("#pathMagicItem").hover(function () {
-    $(this).css({
-        'font-size': '1.5em', 'width': '6.05em'
-    });
-}, function () {
-    $(this).css({
-        'font-size': '1.3em', 'width': '7em'
-    });
-});
-$("#modernCharacter").hover(function () {
-    $(this).css({
-        'font-size': '1.5em', 'width': '6.05em'
-    });
-}, function () {
-    $(this).css({
-        'font-size': '1.3em', 'width': '7em'
-    });
-});
-$("#modernRace").hover(function () {
-    $(this).css({
-        'font-size': '1.5em', 'width': '6.05em'
-    });
-}, function () {
-    $(this).css({
-        'font-size': '1.3em', 'width': '7em'
-    });
-});
-$("#modernMagic").hover(function () {
-    $(this).css({
-        'font-size': '1.5em', 'width': '6.05em'
-    });
-}, function () {
-    $(this).css({
-        'font-size': '1.3em', 'width': '7em'
-    });
-});
-$('#modernFXItem').hover(function () {
-    $(this).css({
-        'font-size': '1.5em', 'width': '6.05em'
-    });
-}, function () {
-    $(this).css({
-        'font-size': '1.3em', 'width': '7em'
-    });
-});
+
 
 //tooltip
 $(document).ready(function () {
@@ -164,4 +98,32 @@ $(document).ready(function () {
         $('.tooltip')
             .css({ 'top': (event.pageY - 10) + 'px', 'left': (event.pageX + 20) + 'px' });
     })
+});
+
+//grow's addNotice function
+function addNotice(notice) {
+    $('<div class="notice"></div>')
+        .append('<div class="skin"></div>')
+        .append('<a href="#" class="close">close</a>')
+        .append($('<div class="content"></div>').html(notice))
+        .hide()
+        .appendTo('#growl')
+        .fadeIn(5000);
+}
+//growl's notices
+setTimeout(function () {
+    addNotice('<p>Updates</p>');
+}, 1000);
+setTimeout(function () {
+    addNotice('<p>Added KiwiBlitz to Modern Settings</p>');
+}, 3000);
+
+//responsive slider
+$(function () {
+    $('.rslides').responsiveSlides({
+        auto: false,
+        captions: true,
+        pager: true,
+        nav: true
+    });
 });

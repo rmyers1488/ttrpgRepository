@@ -1,7 +1,7 @@
 // JavaScript source code
-$(function() {
+$(function () {
     console.log('lightbox');
-});
+})
 //<a class='lightbox' href="../images/CoachGun.jpg"></a>
 $('a.lightbox').click(function (e) {
     //hide scrollbars
@@ -11,8 +11,8 @@ $('a.lightbox').click(function (e) {
         .css('top', $(document).scrollTop())
         .css('opacity', '0')
         //does nothing
-        //.css('height', '95%')
-        //.css('width', '95%')
+        .css('height', '95%')
+        .css('width', '95%')
         .animate({ 'opacity': '0.5' }, 'slow')
         .appendTo('body');
     //hide the lightbox
@@ -80,7 +80,4 @@ $(document).ready(function () {
 //    transition: 'fade',
 //    speed: 500,
 //    current: "{current} of {total} firearm pictures"
-
 //});
-
-
