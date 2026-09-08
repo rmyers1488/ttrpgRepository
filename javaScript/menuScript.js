@@ -8,7 +8,7 @@
 //try 2
 async function populate(){
     const jsonList = "./menu.json";
-    console.log(jsonList);
+    //console.log(jsonList);
     //const request = new Request(jsonList);
     //console.log(request);
     //console.log(JSON.parse(jsonList));
@@ -23,10 +23,13 @@ function createMenu(obj){
     //topLevel.innerHTML = obj.
     console.log(obj);
 }
+populate();
+
+//try3
+
 // populate('https://rmyers1488.github.io//ttrpgRepository/menu.JSON').then(data => {
 //     console.log(data[0].name);
 // });
-populate();
 
 let titled = Array.from(document.querySelectorAll('.title'));
 let menuClose = Array.from(document.querySelectorAll('.titleMenu'));
