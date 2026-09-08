@@ -1,0 +1,80 @@
+﻿<!DOCKTYPE HTML>
+<html lang="en">
+<head>
+    <title>Menu Updater</title>
+    <meta charset="utf-8">
+    <link href="../../CSS/menuCSS.css" rel="stylesheet" />
+    <meta name="content" view="width=device-width">
+    <meta title="Menu Updater" />
+    <meta author="R. Myers" />
+
+</head>
+<body>
+    <!--<h1>Warded Suit</h1>-->
+    <a href="../../index.html">home</a>
+    <div class="flexContainer">
+        <div class="menu">
+            
+        </div>
+        <div class="primary">
+            <div class="image"></div>
+            <lable for="file">Upload Image</lable>
+            <input name="file" type="file" class="imgFile" /><br />
+            <!--<input type="file" onchange="showFile(this)" />-->
+            <label for="system">System</label>
+            <select name="system" class="system">
+                <option value="modern">Modern</option>
+                <option value="pathfinder">Pathfinder</option>
+                <option value="5eDnD">5th Edition D&D</option>
+            </select>
+
+            <label for="level">Level</label>
+            <select name="level" class="level">
+                <option value="0">Image</option>
+                <option vlaue="1">Base</option>
+                <option value="2">Catagory</option>
+                <option value="3">Entry</option>
+            </select><br />
+            <label for="category">Category</label>
+            <input name="category" class="category" type="text" />
+            <br />
+            <label for="name">Name</label>
+            <input name="name" class="name" type="text" />
+            <br />
+            <button class="newClassButton">New Class</button>
+            <span class="newClasses"></span>
+            <br />
+            <label for="element">Element</label>
+            <select name="element" class="element">
+                <option value="img">Image</option>
+                <option value="ul">Unordered List</option>
+                <option value="li">List Element</option>
+            </select>
+            <br />
+            <label for="pLink">URL Link</label>
+            <input type="checkbox" class="hardLink" name="pLink"/>
+            <input name="hardLink" class="hardLinkText" type="text"/><br />
+            <label for="aLink">'a' Link</label>
+            <input type="checkbox" class="aLink" name="aLink" />
+            <input name="aLink" class="aLinkText" type="text" /><br />
+            <label for="eName">Element Name</label>
+            <input name="eName" class="nameText" type="text" />
+            <br />
+            <label for="linkTo">Link to</label>
+            <input name="linkTo" type="text" class="linkTo"/>
+            <br />
+            <label for="text">Text</label>
+            <input name="text" type="text" class="text"/>
+            <br />
+            <label for="titleText">Title Text</label>
+            <input name="titleText" type="text" class="titleText" />
+            <br /><br />
+            <button class="updater">Add Entry</button>
+        </div>
+    </div>
+    <!--<script src="javaScript/menuScript.js"></script>-->
+    <script src="./menuJson.js"></script>
+    <script src="./javaScript/load-image.all.min.js"></script>
+    <script src="./menu.json"></script>
+</body>
+</html>

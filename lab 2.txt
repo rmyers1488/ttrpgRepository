@@ -1,0 +1,2 @@
+I created a side menu using the 'toggle' to make sections come and go.
+On the firearms, if it was working, i included tiles that came in and out on a delay.

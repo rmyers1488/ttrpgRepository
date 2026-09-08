@@ -1,0 +1,9 @@
+menu: [
+{"system":"Modern", "category":"Beastiary", "name":"Sewer Slime", "html":"../../modern/beastiary/sewerSlime.html"},
+{"system":"Modern", "category":"Characters", "name":"Abigail the Ancient Kitsune", "html":"../../modern/characters/abigailTheAncientKitsune.html"},
+{"system":"Modern", "category":"Characters", "name":"Jamison, Special Effect Mai", 
+"html":"../../modern/characters/jamisonSpecialAffectMagi.html"}
+{"system":"Modern", "category":"Characters", "name":"Kagome, The Lethal Librarian", "html":"../../modern/characters/kagomeLethalLibrarian.html"},
+{"system":"Modern", "category":"Feats", "name":"Familiar", "html":"../../modern/feats/familiar.html"},
+{"system":"Modern", "category":"Feats", "name":"Metamagic", "html":"../../modern/feats/metamagic-Pathfinder.html"},
+{"system":"Modern", "category":"Feats", "name":"Psionics", "html":"../../modern/feats/Psionics-3.5.html},

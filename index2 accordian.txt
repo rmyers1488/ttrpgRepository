@@ -1,0 +1,27 @@
+                        <ul id="accordian">
+    <!--pathfinder menu-->
+                            <div class="pathfinder"><img src="PathfinderLogo.png" class="logo" /></div>
+                            <li class="active menu">Characters
+<!--characters-->   
+                                <ul>
+                                    <li title="Arcanist 5, Enchanting Courtisan 3, Arcane Savant 3">
+                                        <a href="pathfinder/characters/elenore.html">Elenore, the Enchanting Courtesian</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu">Class Archtypes</li>
+<!--class archtypes-->
+                                <ul>
+                                    <li title="Gunslinger Archtype">
+                                        <a href="pathfinder/class/Governess.html">Governess</a>
+                                    </li>
+                                </ul>
+                            <li>Equipment</li>
+                                <ul>
+                                    <li>
+                                        Weapons
+                                    </li>
+                                    <li>
+                                        <a class="second" href="pathfinder/items/firearms.html">Firearms</a>
+                                    </li>
+                                </ul>

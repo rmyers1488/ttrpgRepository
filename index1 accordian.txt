@@ -1,0 +1,24 @@
+<ul id="pathMenu">
+
+    <img src="PathfinderLogo.png" class="logo" />
+    <!--<p class="edition">Pathfinder (D&amp;D 3.75e)</p>-->
+    <ul class="list">
+        <div id="pathCharacter" class="title">Characters</div>
+
+        <li class="pathCharacterLI" title="Arcanist 5, Enchanting Courtisan 3, Arcane Savant 3">
+            <a href="pathfinder/characters/elenore.html">
+                Elenore, the Enchanting Courtesian
+            </a>
+        </li>
+    </ul>
+    <ul class="list">
+        <div id="pathEquipment" class="title">Equipment</div>
+        <li class="pathEquipmentLI">Weapons</a></li>
+        <li class="pathEquipmentLI"><a href="pathfinder/items/firearms.html">Firearms</a></li>
+    </ul>
+    <ul class="list">
+        <div id="pathClass" class="title">Class Archtypes</div>
+        <li class="pathClassLI" title="Gunslinger Archtype">
+            <a href="pathfinder/class/Governess.html" >Governess</a>
+        </li>
+    </ul>
