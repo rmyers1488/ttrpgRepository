@@ -14,14 +14,14 @@ async function populate(){
     //console.log(JSON.parse(jsonList));
     const response = await fetch(jsonList);
     const menuItems = await response.json();
-    console.log(menuItems);
+    //console.log(menuItems);
     createMenu(menuItems);
 }
 function createMenu(obj){
     const divider = document.querySelector(".sideBar");
     const topLevel = document.createElement("div");
     //topLevel.innerHTML = obj.
-    console.log(obj);
+    console.log(obj[0]);
 }
 populate();
 
