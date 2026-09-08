@@ -21,7 +21,8 @@ function createMenu(obj){
     const divider = document.querySelector(".sideBar");
     const topLevel = document.createElement("div");
     //topLevel.innerHTML = obj.
-    console.log(obj[0]);
+    let element = JSON.parse(obj);
+    console.log(element[0]);
 }
 populate();
 
