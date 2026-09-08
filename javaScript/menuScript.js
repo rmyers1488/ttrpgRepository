@@ -23,9 +23,9 @@ function createMenu(obj){
     //topLevel.innerHTML = obj.
     console.log(obj);
 }
-populate('https://rmyers1488.github.io//ttrpgRepository/menu.JSON').then(data => {
-    console.log(data[0].name);
-});
+// populate('https://rmyers1488.github.io//ttrpgRepository/menu.JSON').then(data => {
+//     console.log(data[0].name);
+// });
 populate();
 
 let titled = Array.from(document.querySelectorAll('.title'));
