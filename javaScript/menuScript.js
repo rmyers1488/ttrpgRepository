@@ -9,10 +9,10 @@
 async function populate(){
     const jsonList = "./menu.json";
     console.log(jsonList);
-    const request = new Request(jsonList);
+    //const request = new Request(jsonList);
     //console.log(request);
     //console.log(JSON.parse(jsonList));
-    const response = await fetch(url);
+    const response = await fetch(jsonList);
     const menuItems = await response.json();
     console.log(menuItems);
     createMenu(menuItems);
