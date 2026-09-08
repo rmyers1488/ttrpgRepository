@@ -26,6 +26,7 @@ function createMenu(obj){
 populate('https://rmyers1488.github.io//ttrpgRepository/menu.JSON').then(data => {
     console.log(data[0].name);
 });
+populate();
 
 let titled = Array.from(document.querySelectorAll('.title'));
 let menuClose = Array.from(document.querySelectorAll('.titleMenu'));
