@@ -1,31 +1,31 @@
-try 1
-fetch('./menu.json')
-.then((response) => response.json())
-.then((json) => console.log(json));
-import data from './menu.json' assert { type: 'json' };
-console.log(data);
-try 1 end
+// try 1
+// fetch('./menu.json')
+// .then((response) => response.json())
+// .then((json) => console.log(json));
+// import data from './menu.json' assert { type: 'json' };
+// console.log(data);
+// try 1 end
 //try 2
+async function populate(){
+    const jsonList = "./menu.json";
+    console.log(jsonList);
+    const request = new Request(jsonList);
+    //console.log(request);
+    //console.log(JSON.parse(jsonList));
+    const response = await fetch(url);
+    const menuItems = await response.json();
 
-// async function populate(url){
-//     const jsonList = url;
-//     console.log(jsonList);
-//     //const request = new Request(jsonList);
-//     //console.log(request);
-//     //console.log(JSON.parse(jsonList));
-//     const response = new Request(url);
-//     //const menuList = await response.json();
-//     //console.log(menuList);
-//     //createMenu(menuList);
-//     return await response.json();
-// }
-// function createMenu(obj){
-//     const divider = document.querySelector(".sideBar");
-    
-// }
-// populate('https://rmyers1488.github.io//ttrpgRepository/menu.JSON').then(data => {
-//     console.log(data[0].name);
-// });
+    createMenu(menuItems);
+}
+function createMenu(obj){
+    const divider = document.querySelector(".sideBar");
+    const topLevel = document.createElement("div");
+    //topLevel.innerHTML = obj.
+    console.log(obj);
+}
+populate('https://rmyers1488.github.io//ttrpgRepository/menu.JSON').then(data => {
+    console.log(data[0].name);
+});
 
 let titled = Array.from(document.querySelectorAll('.title'));
 let menuClose = Array.from(document.querySelectorAll('.titleMenu'));
