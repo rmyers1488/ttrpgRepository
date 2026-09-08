@@ -1,5 +1,21 @@
 #primary {
 	margin-left: 1em;
 	margin-right: 1em;
+    width: 100%;
+}
+
+.hide{
+	display: none;
+}
+.settingInfo {
+	width: 100%;
+}
+.info table {
+	overflow-x: auto;
+}
+.iframeBlock {
+	height: 500px;
+}
+#info {
 
 }

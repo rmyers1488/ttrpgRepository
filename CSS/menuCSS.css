@@ -1,7 +1,9 @@
 ﻿.sideBar {
 /*    width: 7em;*/
-    position: relative;
-/*    margin-top: 1em;*/
+/*    position: relative;*/
+/*    margin-right: 2em;*/
+/*    left: -1000px;*/
+/*    background: yellow;*/
 }
 
 .sideBarButtonOutside {
@@ -24,15 +26,23 @@
     margin-top: 5px;
     transform: rotate(225deg);
 }
-
+.menu {
+    
+/*    transform: translateX(-105%);*/
+}
 .edition {
 }
 .logo {
     width: 12em;
+    height: auto;
     margin-top: 2em;
 }
 #pathImage {
     margin-top: 2em;
+}
+
+.logos img{
+    width: 500px;
 }
 .list {
     list-style: none;
@@ -69,14 +79,25 @@ input[type=text] {
     right: 5px;
     width: 320px;
     z-index: 10;
+
+}
+#growl p {
+    background: inherit;
+    background-color: #fff;
+    margin-top: 1em;
 }
 .notice {
     position: relative;
     min-height: 30px;
+    margin-bottom: 1em;
+    
+
 }
 .skin {
     position: absolute;
-    background-color: #000000;
+/*    background-color: #a9a9a9;*/
+/*    background-color: #3e3232;*/
+    background-color: black;
     bottom: 0;
     left: 0;
     opacity: 0.6;
@@ -87,7 +108,7 @@ input[type=text] {
     -webkit-border-radius: 5px;
 }
 .close {
-    background: transparent url('.images/egrowl.png') 0 0 no-repeat;
+/*    background: transparent url('.images/egrowl.png') 0 0 no-repeat;*/
     text-indent: -9999px;
     position: absolute;
     top: 2px;
@@ -95,10 +116,7 @@ input[type=text] {
     width: 26px;
     height: 26px;
 }
-#growl p {
-    background: inherit;
-    color: #fff;
-}
+
 
 
 /*end growl*/

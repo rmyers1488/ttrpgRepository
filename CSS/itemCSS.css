@@ -37,20 +37,33 @@
     overflow:auto;
     border-collapse:collapse;
 }
-.table-container table{
-/*	width:100%;*/
-    text-align:center;
-}
+    .table-container table {
+        /*	width:100%;*/
+        text-align: center;
+        column-width: 200px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 .table-container td{
     border:solid 1px black;
+    column-span: all;
+/*    column-gap:30px;*/
 }
 .table-container th{
     border:solid 1px black;
 	background-color: #a4b6ef;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .table-container tr:nth-child(even) {
 	background-color:#d9d8cd;
 }
+
+/*.table-scrollbar {
+    column-width:100px;
+    overflow-x:scroll;
+}*/
+
 
 
 .medium-table-container{
@@ -87,6 +100,7 @@
     border:solid 1px black;
     overflow-x: auto;
     width: fit-content;
+    border-collapse: collapse;
 }
 
 .ftData{
@@ -106,53 +120,30 @@
     margin-left:25%;
     position: fixed;
     background-color:lightgray;
+    position:fixed;
+/*    transition: all 0.4s ease-in-out;*/
 }
 .insideTile {
-    margin-left: 1em;
     margin-right: 1em;
+    margin-left: 1em;
+    margin-top: 1em;
 }
+.hidden {
+    height: 0;
+    display: none;
+    transition:all 1s ease-in-out;
+}
+.hidden.open {
+    height: auto;
+}
+/*tile slide up*/
 
-#green {
-/*    border:1px solid green;*/
-    background: green;
+.tileSlideUp {
+    animation-name: tileSlideUp;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-direction: normal;
 }
-.box {
-    height: 10px;
-    width: 10px;
-}
-
-/*responsive slides*/
-/*.rslides {
-    position: relative;
-    list-style: none;
-    overflow: hidden;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-
-}
-.rslides li {
-    -webkit-backface-visibility: hidden;
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 0;
-    display: inline-block;
-
-}
-.rslides li:first-child {
-    position: relative;
-    display: block;
-    float: left;
-}
-.rslides img {
-    display: block;
-    width: auto;
-    height: 200px;
-    float: left;
-    border: 0;
-}*/
-
 /*image contianer*/
 .leftImages {
     list-style:none;
@@ -164,4 +155,15 @@
 .rightImage {
     width: 95%;
     max-height: 95%;
+}
+
+@keyframes tileSlideUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }

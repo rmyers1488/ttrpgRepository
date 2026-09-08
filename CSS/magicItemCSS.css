@@ -25,3 +25,31 @@
 	margin-left:1em;
 	margin-right: 1em;
 }
+
+/*5e*/
+.titleLine {
+    color: hsl(22, 11%, 55%);
+    font-size:1.2em;
+}
+.infoLine {
+    font-style:italic;
+}
+table {
+    width: 100%;
+}
+table, tr, td, th {
+    border: 3px solid black;
+    border-collapse:collapse;
+}
+tr:nth-child(1) {
+    background-color:hsl(20,58%,81%);
+}
+tr:nth-child(2n) {
+    background-color:hsl(20, 58%, 81%);
+}
+td:nth-child(n+1) {
+    text-align:center;
+}
+td:nth-child(1) {
+    text-align:left;
+}

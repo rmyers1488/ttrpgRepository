@@ -6,6 +6,12 @@
 .spellBlock {
     margin-left:1em;
 }
+.spellImg {
+    height: 150px;
+    float: left;
+    padding-right: .5em;
+
+}
 .division {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
