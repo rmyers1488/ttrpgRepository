@@ -1,3 +1,6 @@
+fetch('./menu.json')
+.then((response) => response.json())
+.then((json) => console.log(json));
 // async function populate(url){
 //     const jsonList = url;
 //     console.log(jsonList);
@@ -17,11 +20,6 @@
 // populate('https://rmyers1488.github.io//ttrpgRepository/menu.JSON').then(data => {
 //     console.log(data[0].name);
 // });
-
-fetch('./menu.json')
-.then((response) => response.json())
-.then((json) => console.log(json));
-
 
 let titled = Array.from(document.querySelectorAll('.title'));
 let menuClose = Array.from(document.querySelectorAll('.titleMenu'));
