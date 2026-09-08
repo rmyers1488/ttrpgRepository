@@ -1,8 +1,12 @@
+try 1
 fetch('./menu.json')
 .then((response) => response.json())
 .then((json) => console.log(json));
 import data from './menu.json' assert { type: 'json' };
 console.log(data);
+try 1 end
+//try 2
+
 // async function populate(url){
 //     const jsonList = url;
 //     console.log(jsonList);
