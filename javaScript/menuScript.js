@@ -14,7 +14,7 @@ function createMenu(obj){
     const divider = document.querySelector(".sideBar");
     
 }
-populate('menu.json').then(data => {
+populate('https://rmyers1488.github.io//ttrpgRepository/menu.JSON').then(data => {
     console.log(data[0].name);
 });
 
