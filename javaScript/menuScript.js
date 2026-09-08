@@ -20,7 +20,7 @@ async function populate(){
 function createMenu(obj){
     const divider = document.querySelector(".sideBar");
     const topLevel = document.createElement("div");
-    //topLevel.innerHTML = obj.
+    console.log(obj);
     let element = JSON.parse(obj);
     console.log(element[0]);
 }
