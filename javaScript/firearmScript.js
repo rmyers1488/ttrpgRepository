@@ -1,7 +1,3 @@
-// JavaScript source code
-$(function () {
-    console.log('firearm list');
-});
 //light firearm
 $('#coatPepperbox').hover(function () {
     $('#coatPepperBoxInfo').fadeIn('1000');
@@ -24,11 +20,6 @@ $('#rifledDoubleHackbut').hover(function () {
     $('#rifledDoubleHackbutInfo').fadeIn('1000');
 }, function () {
     $('#rifledDoubleHackbutInfo').fadeOut('500');
-});
-$('#calvaryMusket').hover(function () {
-    $('#calvaryMusketInfo').fadeIn('1000');
-}, function () {
-    $('#calvaryMusketInfo').fadeOut('500');
 });
 $('#heavyMusket').hover(function () {
     $('#heavyMusketInfo').fadeIn('1000');

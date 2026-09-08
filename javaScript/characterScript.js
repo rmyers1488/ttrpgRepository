@@ -1,23 +1,10 @@
-$(function () {
-    console.log('character script');
-});
-$('.logo').hover(function () {
-    $('.logo').animate({ opacity: '0.5' }, 'slow');
-}, function () {
-    $('.logo').animate({ opacity: '2' }, 'slow');
+import { saveAs } from 'file-saver';
 
-});
+let fileSaver = require('file-saver');
+let blob = new Blob(['helo, world'], {type: "text/plain;charset=utf-8"});
+fileSaver.saveAs(blob, 'hello world.txt');
 
+let blob = new Blob(['hello'], {type: "text/plain;charset=utf-8"});
+fileSaver.saveAs(blob, 'hello.txt');
 
-('#primary > div:first').resizable({
-    handles: 's',
-    minHeight: '25',
-    maxHeight: '500',
-    resize: function () {
-        let remainingSpace = $(this).parent().height() - $(this).outerHeight();
-        let divTwo = $(this).next();
-        let divTwoHeight = remainingSpace - (divTwo.outerHeight() - divTwo.height);
-        divTwo.css('height', divTwoHeight + 'px');
-        console.log(divTwo.css('height'));
-    }
-});
+fileSaver.saveAs()

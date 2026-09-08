@@ -1,18 +1,12 @@
-// JavaScript source code
-$(function () {
-    console.log('magic item');
-});
-
-let size = $('#image').width();
-let newSize = $('#image').width() * 1.2;
-console.log(size, newSize);
-let enlarged = false;
-$('#image').click(function () {
-    //console.log('#image');
-    if (enlarged) {
-        $(this).animate({ width: newSize }, 1000);
-    } else {
-        $(this).animate({ width: size }, 1000);
+document.querySelector(".create").addEventListener('click', function () {
+    if (document.querySelector(".magicItemField") != null) {
+        document.querySelector(".magicItemField").remove();
     }
-    enlarged = !enlarged;
+    let field = document.createElement('div');
+    field.classList.add('magicItemField');
+    document.querySelector('.field').appendChild(field);
+    const title = document.createElement('h2');
+    console.log(document.querySelector('.title').value);
+    title.innerHTML = document.querySelector('.title').value;
+    document.querySelector('.field').appendChild(title);
 });
