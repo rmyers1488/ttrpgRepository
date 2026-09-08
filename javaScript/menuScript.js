@@ -1,7 +1,7 @@
 fetch('./menu.json')
 .then((response) => response.json())
 .then((json) => console.log(json));
-import data from 'menu.json';
+import data from './menu.json';
 console.log(data);
 // async function populate(url){
 //     const jsonList = url;
