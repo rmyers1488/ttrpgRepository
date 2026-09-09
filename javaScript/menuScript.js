@@ -22,7 +22,7 @@ function createMenu(obj){
     const topLevel = document.createElement("div");
     //console.log(obj);
     let element = JSON.parse(obj);
-    console.log(element);
+    console.log('element',element);
     //console.log(element[0]);
 }
 populate();
