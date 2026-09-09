@@ -70,10 +70,10 @@ function menuDisplay(e) {
     }
     let location = -105 + e.offSetX / 2;
     console.log(location);
-    menuPosition.style.transform = translateX(location);
+    //menuPosition.style.transform = translateX(location);
 }
 const menuButton = document.querySelector('.sideBarButtonOutside');
-//menuButton.addEventListener('click', menuDisplay);
+menuButton.addEventListener('click', menuDisplay);
 let menuRange = false;
 window.addEventListener('mousedown', (e) => {
     
