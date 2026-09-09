@@ -25,6 +25,7 @@ function createMenu(obj){
     // console.log(element);
     //console.log(element[0]);
 }
+console.log('test');
 populate();
 
 //try3
