@@ -14,7 +14,7 @@ async function populate(){
     //console.log(JSON.parse(jsonList[0]));
     const response = await fetch(jsonList);
     const menuItems = await response.json();
-    //console.log(menuItems);
+    console.log(menuItems);
     createMenu(menuItems);
 }
 function createMenu(obj){
