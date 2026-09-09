@@ -11,7 +11,7 @@ async function populate(){
     //console.log(jsonList);
     //const request = new Request(jsonList);
     //console.log(request);
-    //console.log(JSON.parse(jsonList));
+    //console.log(JSON.parse(jsonList[0]));
     const response = await fetch(jsonList);
     const menuItems = await response.json();
     //console.log(menuItems);
@@ -21,7 +21,7 @@ function createMenu(obj){
     const divider = document.querySelector(".sideBar");
     const topLevel = document.createElement("div");
     console.log(obj);
-    let element = JSON.parse(obj);
+    let element = JSON.parse(obj[0]);
     console.log(element);
     //console.log(element[0]);
 }
