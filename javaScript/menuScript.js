@@ -6,7 +6,7 @@
 // console.log(data);
 // try 1 end
 //try 2
-async function populate(){
+async function populate() {
     const jsonList = "./menu.json";
     //console.log(jsonList);
     //const request = new Request(jsonList);
@@ -17,7 +17,7 @@ async function populate(){
     console.log(menuItems);
     createMenu(menuItems);
 }
-function createMenu(obj){
+function createMenu(obj) {
     // const divider = document.querySelector(".sideBar");
     // const topLevel = document.createElement("div");
     //console.log(obj);
@@ -26,10 +26,10 @@ function createMenu(obj){
     console.log('element',element);
     // console.log('array', array);
     console.log(obj.length);
-    for (let key in obj) {
-        console.log(key);
-        // console.log(JSON.parse(key));
-    }
+    // for (let key in obj) {
+    //     console.log(key);
+    //     // console.log(JSON.parse(key));
+    // }
 }
 populate();
 
