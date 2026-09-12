@@ -18,14 +18,16 @@ async function populate(){
     createMenu(menuItems);
 }
 function createMenu(obj){
-    const divider = document.querySelector(".sideBar");
-    const topLevel = document.createElement("div");
+    // const divider = document.querySelector(".sideBar");
+    // const topLevel = document.createElement("div");
     //console.log(obj);
-    const element = JSON.parse(obj[0]);
-    const array = array.obj;
-    console.log('element',element);
-    console.log('array', array);
+    // const element = JSON.parse(obj[0]);
+    // const array = array.obj;
+    // console.log('element',element);
+    // console.log('array', array);
     //console.log(element[0]);
+    for (let key in obj) {
+        console.log(JSON.obj());
 }
 populate();
 
