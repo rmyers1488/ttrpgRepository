@@ -27,7 +27,7 @@ function createMenu(obj){
     // console.log('array', array);
     //console.log(element[0]);
     for (let key in obj) {
-        console.log(JSON.obj());
+        console.log(JSON.parse(key));
 }
 populate();
 
