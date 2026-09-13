@@ -26,10 +26,10 @@ function createMenu(obj) {
     console.log('element',element);
     // console.log('array', array);
     console.log(obj.length);
-    // for (let key in obj) {
-    //     console.log(key);
-    //     // console.log(JSON.parse(key));
-    // }
+    for (let key in obj) {
+        console.log(key);
+        // console.log(JSON.parse(key));
+    }
 }
 populate();
 
