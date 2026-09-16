@@ -25,7 +25,7 @@ function createMenu(obj) {
     const element = await fetch(obj[1]);
     const element2 = await element.json();
     // const array = array.obj;
-    console.log('element',element);
+    console.log('element',element2);
     // console.log('array', array);
     // console.log(obj.length);
     // for (let key in obj) {
