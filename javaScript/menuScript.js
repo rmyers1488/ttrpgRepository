@@ -8,28 +8,20 @@
 //try 2
 async function populate() {
     const jsonList = "./menu.json";
-    //console.log(jsonList);
-    //const request = new Request(jsonList);
-    //console.log(request);
-    //console.log(JSON.parse(jsonList[0]));
+    
     const response = await fetch(jsonList);
     const menuItems = await response.json();
     console.log(menuItems);
     createMenu(menuItems);
 }
 function createMenu(obj) {
-    // const divider = document.querySelector(".sideBar");
-    // const topLevel = document.createElement("div");
+    
     console.log(obj);
     const element = JSON.parse(obj[1]);
-    // const element = await fetch(obj[1]);
-    // element = await element.json();
-    // const array = array.obj;
+    
     console.log('element',element);
-    // console.log('array', array);
-    // console.log(obj.length);
+
     for (let key in obj) {
-         //console.log(key);
          console.log(JSON.parse(key));
     }
 }
