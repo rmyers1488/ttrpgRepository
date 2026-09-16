@@ -21,11 +21,11 @@ function createMenu(obj) {
     // const divider = document.querySelector(".sideBar");
     // const topLevel = document.createElement("div");
     console.log(obj);
-    // const element = JSON.parse(obj[1]);
-    const element = await fetch(obj[1]);
-    const element2 = await element.json();
+    const element = JSON.parse(obj[1]);
+    // const element = await fetch(obj[1]);
+    // element = await element.json();
     // const array = array.obj;
-    console.log('element',element2);
+    console.log('element',element);
     // console.log('array', array);
     // console.log(obj.length);
     // for (let key in obj) {
