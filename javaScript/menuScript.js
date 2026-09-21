@@ -24,31 +24,42 @@ function createMenu(obj) {
     obj.forEach((line) => {
         console.log(line);
     // if (line.level === 0){
-        const lineElement = line.element ? document.createElement(`${line.element}`) : "";
+        const lineElement = line.element ? document.createElement(line.element) : "";
 
-        const lineURL = line.url ? `lineElement.src="${line.url}"` : "";
-        const lineClass = line.class ? `lineElement.classList.add("${line.class})"` : "";
-        const lineID = line.id ? `lineElement.id="${line.id}"` : "";
-        const lineData = line.data ? `lineElement.src= data-menu="${line.data}"` : "";
-        const lineText = line.text ? `${line.text}"` : "";
-        if (lineText != ""){
-            lineElement.appendChild(lineText);
-        if (line.a) {
-            const lineA = line.a ? `<a href="${line.href}">${line.a}</a>` : "";
+        
+        if (line.url != "") {
+            lineElement.setAttribute('src', line.url);        
+        }
+        if ( line.class != "") {
+            lineElement.classList.add(line.class);
+        }
+        if (line.id != ""){
+            lineElement.setAttribute("id", line.id);
+        // const lineID = line.id ? lineElement.setAttribute("id", line.id) : "";
+        if (line.data != ""){
+            lineElement.setAttribute("data-menu", line.data);
+        }
+            // `lineElement.src= data-menu="${line.data}"` : "";
+        // line.text ? lineElement.appendChild(line.text) : "";
+        if (line.a != "") {
+            const lineA = `<a href="${line.href}">${line.a}</a>`;
             lineElement.appendChild(lineA);
         }
-        const lineTitle = line.title ? `title="${line.title}"` : "";
-        ${lineURL} ${lineClass} ${lineID} ${lineData} ${lineA} ${lineTitle}`: ""
-        // const lineElementStart = line.element ? `<${line.element} ${lineURL}
+        if (line.title != ""){
+            lineElement.setAttribute("title", line.title);
+        }
+        document.querySelector(line.linkTo).appendChild(lineElement);
+        // const insideElement = ${lineURL} ${lineClass} ${lineID} ${lineData} ${lineA} ${lineTitle}`: ""
+        // const lineElementStart = line.element ? `lineElement.${lineURL}
         // ${lineClass} ${lineID} ${lineData} ${lineA} ${lineTitle}`: "";
         // let lineElementEnd;
         // if (line.element != 'img'){
         //     lineElementEnd = line.element ? `</${line.element}>` : "":
         // }
         // let text = documen.createElement(`${lineElementStart}${lineElementEnd}`;
-        let node = document.createElement(`${line.element}`);
-        const location = line.linkTo ? line.linkTo : "";
-        document.querySelector(location).appendChild(text);
+        // let node = document.createElement(`${line.element}`);
+        // const location = line.linkTo ? line.linkTo : "";
+        // document.querySelector(location).appendChild(text);
         
     });
 }
