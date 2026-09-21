@@ -21,14 +21,16 @@ function createMenu(obj) {
     //const element = JSON.parse(obj[1]);
     //console.log('element',element);
 
-    obj.forEach((line) {
-         console.log(line);
+    obj.forEach((line) => {
+        console.log(line);
         const link = document.createElement(line.element);
         if (line.level === 0){
-            let data = `<${link.element src="link.url" id="link.id"
-            class="link.class"}>`;
-            let data.innerHTML = data;
-            link.append(data);
+            let data = `<${link.element} src=${"link.url"} id=${"link.id"}
+            class=${"link.class"}>`;
+            let inner.innerHTML = data;
+            link.append(inner);
+            let location = document.querySelector('.sideBar');
+            location.append(link);
         }
     });
 }
