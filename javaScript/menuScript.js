@@ -17,9 +17,9 @@ async function populate() {
 function createMenu(obj) {
     
     console.log(obj);
-    const element = JSON.parse(obj[1]);
-    
-    console.log('element',element);
+    console.log(obj[1]);
+    //const element = JSON.parse(obj[1]);
+    //console.log('element',element);
 
     obj.forEach((line) {
          console.log(line);
