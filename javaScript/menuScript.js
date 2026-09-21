@@ -23,11 +23,15 @@ function createMenu(obj) {
     const sidebar = document.querySelector(".sideBar");
     obj.forEach((line) => {
         console.log(line);
-        if (line.level === 0){
-            const htmlString = `<${line.element} src="${line.url}" 
-            id="${line.id}" class="${line.class}">`;
-            sidebar.insertAdjacentHTML("beforeend", htmlString);
-        }
+    // if (line.level === 0){
+        const lineElement = line.element ? `${line.element}` : "";
+        const lineURL = line.url ? `src="${line.url}"` : "";
+        const lineClass = line.class ? `class=${line.class}"` : "";
+        const lineID = line.id ? `id=${line.id}"` : "";
+        const lineData = line.data ? `data-menu="${line.data}"` : "";
+        id="${line.id}" class="${line.class}">`;
+        sidebar.insertAdjacentHTML("beforeend", htmlString);
+        // }
     });
 }
 populate();
