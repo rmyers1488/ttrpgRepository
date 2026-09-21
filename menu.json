@@ -6,21 +6,21 @@
         "element": "img",
         "class": "logo",
         "id": "pathImage",
-        "linkTo": "sideBar"
+        "linkTo": ".sideBar"
     },
     {
         "system": "pathfinder",
         "level": 1,
         "element": "ul",
         "id": "pathMenu",
-        "linkTo": "sideBar"
+        "linkTo": ".sideBar"
     },
     {
         "system": "pathfinder",
         "level": 2,
         "element": "ul",
         "class": "list pathCharacter",
-        "linkTo": "pathMenu"
+        "linkTo": ".pathMenu"
     },
     {
         "system": "pathfinder",
@@ -29,7 +29,7 @@
         "class": "title",
         "data-menu": "pathCharacterLI",
         "id": "pathCharacter",
-        "linkTo": "pathCharacter"
+        "linkTo": ".pathCharacter"
     },
     {
         "system": "pathfinder",
@@ -39,6 +39,6 @@
         "href": "../../pathfinder/characters/elenore.html",
         "a": "Elenore, the Enchanting Courtesian",
         "title": "Arcanist 5, Enchanting Courtisan 3, Arcane Savant3",
-        "linkTo": "pathCharacter"
+        "linkTo": ".pathCharacter"
     }
 ]
