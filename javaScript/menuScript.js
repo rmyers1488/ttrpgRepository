@@ -48,7 +48,7 @@ function createMenu(obj) {
         // let text = documen.createElement(`${lineElementStart}${lineElementEnd}`;
         let node = document.createElement(`${line.element}`);
         const location = line.linkTo ? line.linkTo : "";
-        document.querySelector(`.${location}`).appendChild(text);
+        document.querySelector(location).appendChild(text);
         
     });
 }
