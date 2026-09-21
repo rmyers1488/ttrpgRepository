@@ -30,7 +30,7 @@ function createMenu(obj) {
             let data.innerHTML = data;
             link.append(data);
         }
-    }
+    });
 }
 populate();
 
