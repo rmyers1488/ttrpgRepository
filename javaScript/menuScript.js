@@ -27,25 +27,26 @@ function createMenu(obj) {
         const lineElement = line.element ? document.createElement(line.element) : "";
 
         
-        if (line.url != "") {
+        if (line.url) {
             lineElement.setAttribute('src', line.url);        
         }
-        if ( line.class != "") {
+        if ( line.class) {
             lineElement.classList.add(line.class);
         }
-        if (line.id != ""){
+        if (line.id){
             lineElement.setAttribute("id", line.id);
+        }
         // const lineID = line.id ? lineElement.setAttribute("id", line.id) : "";
-        if (line.data != ""){
+        if (line.data){
             lineElement.setAttribute("data-menu", line.data);
         }
             // `lineElement.src= data-menu="${line.data}"` : "";
         // line.text ? lineElement.appendChild(line.text) : "";
-        if (line.a != "") {
+        if (line.a) {
             const lineA = `<a href="${line.href}">${line.a}</a>`;
-            lineElement.appendChild(lineA);
+            lineElement.innerHTML(lineA);
         }
-        if (line.title != ""){
+        if (line.title){
             lineElement.setAttribute("title", line.title);
         }
         document.querySelector(line.linkTo).appendChild(lineElement);
