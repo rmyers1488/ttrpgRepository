@@ -24,14 +24,27 @@ function createMenu(obj) {
     obj.forEach((line) => {
         console.log(line);
     // if (line.level === 0){
-        const lineElement = line.element ? `${line.element}` : "";
+        
         const lineURL = line.url ? `src="${line.url}"` : "";
         const lineClass = line.class ? `class=${line.class}"` : "";
         const lineID = line.id ? `id=${line.id}"` : "";
         const lineData = line.data ? `data-menu="${line.data}"` : "";
-        id="${line.id}" class="${line.class}">`;
-        sidebar.insertAdjacentHTML("beforeend", htmlString);
-        // }
+        const lineA = line.a ? `<a href="${line.href}">${line.a}</a>` :
+            "";
+        if (lineA != "" && lineElement != "") {
+            lineElement.element.append(lineA);
+        }
+        const lineTitle = line.title ? `title="${line.title}"` : "";
+        const lineElementStart = line.element ? `<${line.element ${lineURL}
+        ${lineClass} ${lineID} ${lineData} ${lineA} ${lineTitle}>`: "";
+        const lineElementEnd;
+        if (line.element != 'img'){
+            lineElementEnd = line.element ? `</${line.element}>` : "":
+        }
+        let text = `${lineElementStart}${lineElementEnd}`;
+        const location = line.linkTo ? line.linkTo : "";
+        document.querySelector(`.${location}`).appendChild(text);
+        
     });
 }
 populate();
