@@ -23,6 +23,12 @@ function createMenu(obj) {
 
     obj.forEach((line) {
          console.log(line);
+        const link = document.createElement(line.element);
+        if (line === 0){
+            link.classList.add(line.class);
+            const urlAdd = line.url;
+            const idAdd = line.id;
+        }
     }
 }
 populate();
