@@ -24,24 +24,29 @@ function createMenu(obj) {
     obj.forEach((line) => {
         console.log(line);
     // if (line.level === 0){
-        
-        const lineURL = line.url ? `src="${line.url}"` : "";
-        const lineClass = line.class ? `class=${line.class}"` : "";
-        const lineID = line.id ? `id=${line.id}"` : "";
-        const lineData = line.data ? `data-menu="${line.data}"` : "";
-        const lineA = line.a ? `<a href="${line.href}">${line.a}</a>` :
-            "";
-        if (lineA != "" && lineElement != "") {
-            lineElement.element.append(lineA);
+        const lineElement = line.element ? document.createElement(`${line.element}`) : "";
+
+        const lineURL = line.url ? `lineElement.src="${line.url}"` : "";
+        const lineClass = line.class ? `lineElement.classList.add("${line.class})"` : "";
+        const lineID = line.id ? `lineElement.id="${line.id}"` : "";
+        const lineData = line.data ? `lineElement.src= data-menu="${line.data}"` : "";
+        const lineText = line.text ? `${line.text}"` : "";
+        if (lineText != ""){
+            lineElement.appendChild(lineText);
+        if (line.a) {
+            const lineA = line.a ? `<a href="${line.href}">${line.a}</a>` : "";
+            lineElement.appendChild(lineA);
         }
         const lineTitle = line.title ? `title="${line.title}"` : "";
-        const lineElementStart = line.element ? `<${line.element ${lineURL}
-        ${lineClass} ${lineID} ${lineData} ${lineA} ${lineTitle}>`: "";
-        const lineElementEnd;
-        if (line.element != 'img'){
-            lineElementEnd = line.element ? `</${line.element}>` : "":
-        }
-        let text = `${lineElementStart}${lineElementEnd}`;
+        ${lineURL} ${lineClass} ${lineID} ${lineData} ${lineA} ${lineTitle}`: ""
+        // const lineElementStart = line.element ? `<${line.element} ${lineURL}
+        // ${lineClass} ${lineID} ${lineData} ${lineA} ${lineTitle}`: "";
+        // let lineElementEnd;
+        // if (line.element != 'img'){
+        //     lineElementEnd = line.element ? `</${line.element}>` : "":
+        // }
+        // let text = documen.createElement(`${lineElementStart}${lineElementEnd}`;
+        let node = document.createElement(`${line.element}`);
         const location = line.linkTo ? line.linkTo : "";
         document.querySelector(`.${location}`).appendChild(text);
         
