@@ -30,8 +30,11 @@ function createMenu(obj) {
         if (line.url) {
             lineElement.setAttribute('src', line.url);        
         }
-        if ( line.class) {
-            lineElement.classList.add(line.class);
+        if ( line.class1) {
+            lineElement.classList.add(line.class1);
+        }
+        if (line.class2){
+            lineElement.classList.add(line.class2);
         }
         if (line.id){
             lineElement.setAttribute("id", line.id);
