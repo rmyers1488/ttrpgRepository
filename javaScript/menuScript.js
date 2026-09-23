@@ -47,7 +47,6 @@ function createMenu(obj) {
         if (line.title){
             lineElement.setAttribute("title", line.title);
         }
-        console.log(lineElement);
         document.querySelector(line.linkTo).appendChild(lineElement);
         // const insideElement = ${lineURL} ${lineClass} ${lineID} ${lineData} ${lineA} ${lineTitle}`: ""
         // const lineElementStart = line.element ? `lineElement.${lineURL}
