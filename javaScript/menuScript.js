@@ -11,7 +11,6 @@ async function populate() {
     
     const response = await fetch(jsonList);
     const menuItems = await response.json();
-    console.log(menuItems);
     createMenu(menuItems);
 }
 function createMenu(obj) {
@@ -19,11 +18,8 @@ function createMenu(obj) {
     //console.log('element',element);
     const sidebar = document.querySelector(".sideBar");
     obj.forEach((line) => {
-        console.log(line);
     // if (line.level === 0){
         const lineElement = line.element ? document.createElement(line.element) : "";
-
-        
         if (line.url) {
             lineElement.setAttribute('src', line.url);        
         }
