@@ -13,10 +13,8 @@
         "system": "pathfinder",
         "level": 1,
         "element": "ul",
-        
         "class": "pathMenu",
         "linkTo": ".sideBar"
-        
     },
     {
         "system": "pathfinder",
