@@ -20,7 +20,7 @@
         "system": "pathfinder",
         "level": 2,
         "element": "ul",
-        "class1": "list"
+        "class1": "list",
         "class2": pathfinderCharacters",
         "linkTo": ".pathMenu"
     },
@@ -28,7 +28,7 @@
         "system": "pathfinder",
         "level": 3,
         "element": "li",
-        "class1": "title"
+        "class1": "title",
         "class2": "pathCharacter",
         "data-menu": "pathCharacterLI",
         "linkTo": ".pathfinderCharacters",
@@ -38,7 +38,7 @@
         "system": "pathfinder",
         "level": 4,
         "element": "li",
-        "class1": "pathCharacterLI"
+        "class1": "pathCharacterLI",
         "class2": "titleMenu",
         "href": "../../pathfinder/characters/elenore.html",
         "a": "Elenore, the Enchanting Courtesian",
