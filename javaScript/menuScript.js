@@ -47,7 +47,7 @@ function createMenu(obj) {
         // line.text ? lineElement.appendChild(line.text) : "";
         if (line.a) {
             const lineA = `<a href="${line.href}">${line.a}</a>`;
-            lineElement.innerHTML(lineA);
+            lineElement.innerHTML = lineA;
         }
         if (line.title){
             lineElement.setAttribute("title", line.title);
