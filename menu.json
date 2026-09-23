@@ -21,7 +21,7 @@
         "level": 2,
         "element": "ul",
         "class1": "list",
-        "class2": pathfinderCharacters",
+        "class2": "pathfinderCharacters",
         "linkTo": ".pathMenu"
     },
     {
