@@ -15,9 +15,6 @@ async function populate() {
     createMenu(menuItems);
 }
 function createMenu(obj) {
-    
-    console.log(obj);
-    console.log(obj[1]);
     //const element = JSON.parse(obj[1]);
     //console.log('element',element);
     const sidebar = document.querySelector(".sideBar");
@@ -47,6 +44,7 @@ function createMenu(obj) {
         // line.text ? lineElement.appendChild(line.text) : "";
         if (line.a) {
             const lineA = `<a href="${line.href}">${line.a}</a>`;
+            console.log(lineA);
             lineElement.appendChild(lineA);
             // lineElement.innerHTML = lineA;
         }
