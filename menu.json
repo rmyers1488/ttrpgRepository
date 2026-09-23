@@ -23,7 +23,7 @@
         "level": 2,
         "element": "ul",
         "class": "list pathfinderCharacters",
-        "linkTo" "
+        "linkTo": ".pathMenu"
     },
     {
         "system": "pathfinder",
