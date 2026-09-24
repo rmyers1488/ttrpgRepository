@@ -41,6 +41,7 @@ function createMenu(obj) {
         const lineAElement = line.a ? document.createElement("a") : "";
         if (line.a) {
             lineAElement.setAttribute("href", line.href);
+            lineAElement.innerHTML = line.a;
         }
         // lineAElement.innerHTML = line.a;
         // if (line.a) {
