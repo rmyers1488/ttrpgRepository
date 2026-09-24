@@ -38,12 +38,15 @@ function createMenu(obj) {
         }
             // `lineElement.src= data-menu="${line.data}"` : "";
         // line.text ? lineElement.appendChild(line.text) : "";
-        if (line.a) {
-            const lineA = `<a href="${line.href}">${line.a}</a>`;
-            console.log(lineA);
-            lineElement.appendChild(lineA);
-            // lineElement.innerHTML = lineA;
-        }
+        const lineAElement = line. ? document.createElement("a") : "";
+        lineAElement.setAttribute("href", line.href);
+        // lineAElement.innerHTML = line.a;
+        // if (line.a) {
+        //     const lineA = `<a href="${line.href}">${line.a}</a>`;
+        //     console.log(lineA);
+        //     lineElement.appendChild(lineA);
+        //     // lineElement.innerHTML = lineA;
+        // }
         if (line.title){
             lineElement.setAttribute("title", line.title);
         }
