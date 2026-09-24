@@ -38,8 +38,10 @@ function createMenu(obj) {
         }
             // `lineElement.src= data-menu="${line.data}"` : "";
         // line.text ? lineElement.appendChild(line.text) : "";
-        const lineAElement = line. ? document.createElement("a") : "";
-        lineAElement.setAttribute("href", line.href);
+        const lineAElement = line.a ? document.createElement("a") : "";
+        if (line.a) {
+            lineAElement.setAttribute("href", line.href);
+        }
         // lineAElement.innerHTML = line.a;
         // if (line.a) {
         //     const lineA = `<a href="${line.href}">${line.a}</a>`;
