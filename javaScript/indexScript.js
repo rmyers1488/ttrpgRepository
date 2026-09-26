@@ -61,37 +61,37 @@
 //}, 200);
 
 //growl
-function addNotice(text) {
-    let notice = document.createElement('div');
-    //notice.classList.add('notice');
+// function addNotice(text) {
+//     let notice = document.createElement('div');
+//     //notice.classList.add('notice');
     
-    let skin = document.createElement('div');
-    skin.classList.add('skin');
-    //skin.style.color = '#eeeeee';
-    //skin.style.fontWeight = 'bold';
-    //skin.textContent = text;
-    //skin.style.textAlign = 'right';
-    //skin.style.paddingRight = '10px';
-    //let close = document.createElement('div');
-    //close.classList.add('close');
-    //close.textContent = 'close';
-    //let content = document.createElement('div');
-    //content.classList.add('content');
-    //content.textContent = text;
-    //content.style.color = 'white';
-    notice.append(skin);
-    //skin.append(close);
-    //close.append(content);
-    notice.addEventListener('click', function () {
-        this.remove();
-    });
-    document.querySelector('#growl').append(notice);
-}
-setTimeout( function () {
-    addNotice('Updates');
-}, 1000);
+//     let skin = document.createElement('div');
+//     skin.classList.add('skin');
+//     //skin.style.color = '#eeeeee';
+//     //skin.style.fontWeight = 'bold';
+//     //skin.textContent = text;
+//     //skin.style.textAlign = 'right';
+//     //skin.style.paddingRight = '10px';
+//     //let close = document.createElement('div');
+//     //close.classList.add('close');
+//     //close.textContent = 'close';
+//     //let content = document.createElement('div');
+//     //content.classList.add('content');
+//     //content.textContent = text;
+//     //content.style.color = 'white';
+//     notice.append(skin);
+//     //skin.append(close);
+//     //close.append(content);
+//     notice.addEventListener('click', function () {
+//         this.remove();
+//     });
+//     document.querySelector('#growl').append(notice);
+// }
+// setTimeout( function () {
+//     addNotice('Updates');
+// }, 1000);
 
-setTimeout( function () {
-    addNotice('Added KiwiBlitz to Modern Settings');
-}, 3000);
+// setTimeout( function () {
+//     addNotice('Added KiwiBlitz to Modern Settings');
+// }, 3000);
 
