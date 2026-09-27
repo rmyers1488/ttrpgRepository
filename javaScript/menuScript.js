@@ -19,7 +19,7 @@ function createMenu(obj) {
     const sidebar = document.querySelector(".sideBar");
     obj.forEach((line) => {
     // if (line.level === 0){
-        console.log(line.level);
+        console.log(1);
         const lineElement = line.element ? document.createElement(line.element) : "";
         if (line.url) {
             lineElement.setAttribute('src', line.url);        
