@@ -2,11 +2,11 @@
     {
         "system": "pathfinder",
         "level": 0,
-        "url": "../../images/PathfinderLogo.png",
+        "url": "./images/PathfinderLogo.png",
         "element": "img",
         "class1": "logo",
         "id": "pathImage",
-        "linkTo": ".sideBar",
+        "linkTo": ".menuLine",
         "alt": "Pathfinder Master List"
     },
     {
@@ -30,6 +30,7 @@
         "element": "li",
         "class1": "title",
         "class2": "pathCharacter",
+        
         "data-menu": "pathCharacterLI",
         "linkTo": ".pathfinderCharacters",
         "text": "Characters"
