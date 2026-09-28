@@ -30,6 +30,9 @@ function createMenu(obj) {
         if (line.class2){
             lineElement.classList.add(line.class2);
         }
+        if (line.class3){
+            lineElement.classList.add(line.class3);
+        }
         if (line.id){
             lineElement.setAttribute("id", line.id);
         }
@@ -39,12 +42,6 @@ function createMenu(obj) {
         }
             // `lineElement.src= data-menu="${line.data}"` : "";
         // line.text ? lineElement.appendChild(line.text) : "";
-        if (line.a) {
-            const lineAElement = document.createElement("a");
-            lineAElement.setAttribute("href", line.href);
-            lineAElement.innerHTML = line.a;
-            lineElement.appendChild(lineAElement);
-        }
         // lineAElement.innerHTML = line.a;
         // if (line.a) {
         //     const lineA = `<a href="${line.href}">${line.a}</a>`;
@@ -60,6 +57,13 @@ function createMenu(obj) {
         }
         console.log(lineElement);
         document.querySelector(line.linkTo).appendChild(lineElement);
+        if (line.a) {
+            const lineAElement = document.createElement("a");
+            lineAElement.setAttribute("href", line.href);
+            lineAElement.innerHTML = line.a;
+            document.querySelector(line.
+            lineElement.appendChild(line.class3).appendChild(lineAElement);
+        }
         // const insideElement = ${lineURL} ${lineClass} ${lineID} ${lineData} ${lineA} ${lineTitle}`: ""
         // const lineElementStart = line.element ? `lineElement.${lineURL}
         // ${lineClass} ${lineID} ${lineData} ${lineA} ${lineTitle}`: "";
