@@ -60,7 +60,7 @@ function createMenu(obj) {
         if (line.a) {
             const lineAElement = document.createElement("a");
             lineAElement.setAttribute("href", line.href);
-            lineElement.querySelector(line.class3).appendChild(lineAElement);
+            document.querySelector(line.class3).appendChild(lineAElement);
             
             // lineElement.appendChild(line.class3).appendChild(lineAElement);
         }
