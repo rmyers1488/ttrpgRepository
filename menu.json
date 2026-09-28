@@ -14,7 +14,7 @@
         "level": 1,
         "element": "ul",
         "class1": "pathMenu",
-        "linkTo": ".sideBar"
+        "linkTo": ".menuLine"
     },
     {
         "system": "pathfinder",
