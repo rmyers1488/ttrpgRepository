@@ -39,10 +39,11 @@ function createMenu(obj) {
         }
             // `lineElement.src= data-menu="${line.data}"` : "";
         // line.text ? lineElement.appendChild(line.text) : "";
-        const lineAElement = line.a ? document.createElement("a") : "";
         if (line.a) {
+            const lineAElement = document.createElement("a");
             lineAElement.setAttribute("href", line.href);
             lineAElement.innerHTML = line.a;
+            lineElement.appendChild(lineAElement);
         }
         // lineAElement.innerHTML = line.a;
         // if (line.a) {
