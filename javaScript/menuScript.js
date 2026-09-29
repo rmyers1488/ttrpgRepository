@@ -24,6 +24,7 @@ function createMenu(obj) {
         if (line.url) {
             lineElement.setAttribute('src', line.url);        
         }
+        
         if ( line.class1) {
             lineElement.classList.add(line.class1);
         }
@@ -60,8 +61,9 @@ function createMenu(obj) {
         if (line.a) {
             const lineAElement = document.createElement("a");
             lineAElement.setAttribute("href", line.href);
-            document.querySelector(`.${line.class3}`).appendChild(lineAElement);
-            
+            lineAElement.classList.add(line.aLink);
+            lineAElement.textContent = line.a;
+            document.querySelector(line.class3).appendChild(lineAElement);
             // lineElement.appendChild(line.class3).appendChild(lineAElement);
         }
         // const insideElement = ${lineURL} ${lineClass} ${lineID} ${lineData} ${lineA} ${lineTitle}`: ""
