@@ -41,10 +41,10 @@
         "element": "li",
         "class1": "pathCharacterLI",
         "class2": "titleMenu",
-        "class3": ".elenore",
+        "class3": "elenore",
         "href": "pathfinder/characters/elenore.html",
-        "aLink": "elenoreLink",
-        "a": "Elenore, the Enchanting Courtesian",
+        "aLink": ".elenore",
+        "aText": "Elenore, the Enchanting Courtesian",
         "title": "Arcanist 5, Enchanting Courtisan 3, Arcane Savant3",
         "linkTo": ".pathfinderCharacters"
     }
