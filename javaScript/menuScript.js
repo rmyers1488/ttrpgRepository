@@ -56,7 +56,6 @@ function createMenu(obj) {
         if (line.text){
             lineElement.textContent = line.text;
         }
-        console.log(lineElement);
         document.querySelector(line.linkTo).appendChild(lineElement);
         if (line.a) {
             const lineAElement = document.createElement("a");
@@ -64,7 +63,7 @@ function createMenu(obj) {
             // lineAElement.classList.add(line.aLink);
             lineAElement.textContent = line.aText;
             document.querySelector(line.aLink).appendChild(lineAElement);
-            
+            console.log(lineAElement);
         }
         // const insideElement = ${lineURL} ${lineClass} ${lineID} ${lineData} ${lineA} ${lineTitle}`: ""
         // const lineElementStart = line.element ? `lineElement.${lineURL}
