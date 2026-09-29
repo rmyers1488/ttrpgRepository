@@ -61,10 +61,10 @@ function createMenu(obj) {
         if (line.a) {
             const lineAElement = document.createElement("a");
             lineAElement.setAttribute("href", line.href);
-            lineAElement.classList.add(line.aLink);
-            lineAElement.textContent = line.a;
-            document.querySelector(line.class3).appendChild(lineAElement);
-            // lineElement.appendChild(line.class3).appendChild(lineAElement);
+            // lineAElement.classList.add(line.aLink);
+            lineAElement.textContent = line.aText;
+            document.querySelector(line.aLink).appendChild(lineAElement);
+            
         }
         // const insideElement = ${lineURL} ${lineClass} ${lineID} ${lineData} ${lineA} ${lineTitle}`: ""
         // const lineElementStart = line.element ? `lineElement.${lineURL}
