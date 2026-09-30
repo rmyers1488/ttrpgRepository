@@ -59,25 +59,14 @@ function createMenu(obj) {
         console.log("line.a", line.a);
         console.log(1);
         if (line.a) {
-            const lineAElement = document.createElement("a");
-            lineAElement.setAttribute("href", line.href);
+            const lineAText = `<a href='${line.href}'>${line.aText}</a>`;
+            lineElement.innerHTML = lineAText;
+            //lineAElement.setAttribute("href", line.href);
             // lineAElement.classList.add(line.aLink);
-            lineAElement.textContent = line.aText;
-            document.querySelector(line.aLink).appendChild(lineAElement);
-            console.log(lineAElement);
+            //lineAElement.textContent = line.aText;
+            //document.querySelector(line.aLink).appendChild(lineAElement);
+            //console.log(lineAElement);
         }
-        // const insideElement = ${lineURL} ${lineClass} ${lineID} ${lineData} ${lineA} ${lineTitle}`: ""
-        // const lineElementStart = line.element ? `lineElement.${lineURL}
-        // ${lineClass} ${lineID} ${lineData} ${lineA} ${lineTitle}`: "";
-        // let lineElementEnd;
-        // if (line.element != 'img'){
-        //     lineElementEnd = line.element ? `</${line.element}>` : "":
-        // }
-        // let text = documen.createElement(`${lineElementStart}${lineElementEnd}`;
-        // let node = document.createElement(`${line.element}`);
-        // const location = line.linkTo ? line.linkTo : "";
-        // document.querySelector(location).appendChild(text);
-        
     });
 }
 populate();
