@@ -61,7 +61,7 @@ function createMenu(obj) {
         if (line.aText) {
             // const = lineAText = `<a href='${line.href}'>${line.aText}</a>`;
             
-            const = lineElement.innerHTML = document.createElement('a');
+            const = lineAElement.innerHTML = document.createElement('a');
             lineAElement.setAttribute("href", line.href);
             // lineAElement.classList.add();
             lineAElement.textContent = line.aText;
