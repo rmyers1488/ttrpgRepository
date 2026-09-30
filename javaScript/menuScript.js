@@ -56,15 +56,15 @@ function createMenu(obj) {
             lineElement.textContent = line.text;
         }
         document.querySelector(line.linkTo).appendChild(lineElement);
-        console.log("line.a", line.a);
+        console.log("line.aText", line.aText);
         console.log(1);
-        if (line.a) {
+        if (line.aText) {
             const lineAText = `<a href='${line.href}'>${line.aText}</a>`;
             
-            const lineElement.innerHTML = lineAText;
-            //lineAElement.setAttribute("href", line.href);
-            // lineAElement.classList.add(line.aLink);
-            //lineAElement.textContent = line.aText;
+            const lineElement.innerHTML = document.createElement('a');
+            lineAElement.setAttribute("href", line.href);
+            // lineAElement.classList.add();
+            lineAElement.textContent = line.aText;
             document.querySelector(line.aLink).appendChild(lineAElement);
             //console.log(lineAElement);
         }
