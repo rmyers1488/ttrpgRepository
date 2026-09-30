@@ -1,6 +1,6 @@
 [
     {
-        "system": "pathfinder",
+        "placement": "pathfinder 0",
         "level": 0,
         "url": "./images/PathfinderLogo.png",
         "element": "img",
@@ -10,14 +10,14 @@
         "alt": "Pathfinder Master List"
     },
     {
-        "system": "pathfinder",
+        "placement": "pathfinder 1",
         "level": 1,
         "element": "ul",
         "class1": "pathMenu",
         "linkTo": ".menuLine"
     },
     {
-        "system": "pathfinder",
+        "placement": "pathfinder 2 character",
         "level": 2,
         "element": "ul",
         "class1": "list",
@@ -25,7 +25,7 @@
         "linkTo": ".pathMenu"
     },
     {
-        "system": "pathfinder",
+        "system": "pathfinder 3 character",
         "level": 3,
         "element": "li",
         "class1": "title",
@@ -36,7 +36,7 @@
         "text": "Characters"
     },
     {
-        "system": "pathfinder",
+        "system": "pathfinder 4 character elenore",
         "level": 4,
         "element": "li",
         "class1": "pathCharacterLI",
