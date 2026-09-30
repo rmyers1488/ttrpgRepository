@@ -60,11 +60,12 @@ function createMenu(obj) {
         console.log(1);
         if (line.a) {
             const lineAText = `<a href='${line.href}'>${line.aText}</a>`;
-            lineElement.innerHTML = lineAText;
+            
+            const lineElement.innerHTML = lineAText;
             //lineAElement.setAttribute("href", line.href);
             // lineAElement.classList.add(line.aLink);
             //lineAElement.textContent = line.aText;
-            //document.querySelector(line.aLink).appendChild(lineAElement);
+            document.querySelector(line.aLink).appendChild(lineAElement);
             //console.log(lineAElement);
         }
     });
