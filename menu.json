@@ -30,7 +30,6 @@
         "element": "li",
         "class1": "title",
         "class2": "pathCharacter",
-        
         "data-menu": "pathCharacterLI",
         "linkTo": ".pathfinderCharacters",
         "text": "Characters"
@@ -47,5 +46,35 @@
         "aText": "Elenore, the Enchanting Courtesian",
         "title": "Arcanist 5, Enchanting Courtisan 3, Arcane Savant3",
         "linkTo": ".pathfinderCharacters"
-    }
+    },
+    {
+        "placement": "pathfinder 2 beastiary",
+        "level": 2,
+        "element": "ul",
+        "class1": "list",
+        "class2": "pathBeastiary",
+        "linkTo": ".pathMenu"
+    },
+    {
+        "placement": "pathfinder 3 beastiry",
+        "level": 3,
+        "element": "li",
+        "class1": "title",
+        "class2": "pathBeastiary",
+        "data-menu": "pathBeastiaryLI",
+        "linkTo": ".pathfinderCharacters",
+        "text": "Beastiary"
+    },
+    {
+        "system": "pathfinder 4 beastiary arcaneDrgon",
+        "level": 4,
+        "element": "li",
+        "class1": "pathBeastiaryLI",
+        "class2": "titleMenu",
+        "class3": "arcaneDragon",
+        "href": "pathfinder/beastiary/arcaneDragon.html",
+        "aLink": ".arcaneDragon",
+        "aText": "Arcane Dragon",
+        "linkTo": ".pathfinderCharacters"
+    },
 ]
