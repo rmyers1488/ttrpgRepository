@@ -52,7 +52,7 @@
         "level": 2,
         "element": "ul",
         "class1": "list",
-        "class2": "pathBeastiary",
+        "class2": "pathfinderBeastiary",
         "linkTo": ".pathMenu"
     },
     {
@@ -62,7 +62,7 @@
         "class1": "title",
         "class2": "pathBeastiary",
         "data-menu": "pathBeastiaryLI",
-        "linkTo": ".pathfinderCharacters",
+        "linkTo": ".pathfinderBeastiary",
         "text": "Beastiary"
     },
     {
@@ -75,6 +75,41 @@
         "href": "pathfinder/beastiary/arcaneDragon.html",
         "aLink": ".arcaneDragon",
         "aText": "Arcane Dragon",
-        "linkTo": ".pathfinderCharacters"
+        "linkTo": ".pathfinderBeastiary"
     },
+    {
+        "system": "pathfinder 4 beastiary grappler",
+        "level": 4,
+        "element": "li",
+        "class1": "pathBeastiaryLI",
+        "class2": "titleMenu",
+        "class3": "grappler",
+        "href": "pathfinder/beastiary/grappler",
+        "aLink": ".grappler",
+        "aText": "Grappler",
+        "linkTo": ".pathfinderBeastiary"
+    },
+    {
+        "system": "pathfinder 4 beastiary grappler",
+        "level": 4,
+        "element": "li",
+        "class1": "pathBeastiaryLI",
+        "class2": "titleMenu",
+        "class3": "satchel",
+        "href": "pathfinder/beastiary/satchel",
+        "aLink":".satchel",
+        "aText": "Satchel",
+        "linkTo": ".pathfinderBeastiary"
+    },
+    {
+        "system": "pathfinder 4 beastiary, thievesHand",
+        "level": 4,
+        "element": "li",
+        "class1":"pathBeastiaryLI",
+        "class2": "titleMenu",
+        "class3": "thievesHand",
+        "href": "pathfinder/beastiary/thievesHand",
+        "aLink":".thievesHand",
+        "aText":"Thieves' Hand",
+        "linkTo": ".pathfinderBeastiary"
 ]
