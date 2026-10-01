@@ -82,6 +82,39 @@
         "aLink": ".milli",
         "aText": "Milli, Gunsinger Magical Girl"
         "title": "Vigilante 3 / Vigilante 7 / Vigilante 15
+    },
+    {
+        "placement": "pathfinder 2 classArchtypes",
+        "level": 2,
+        "element": "ul",
+        "class1": "list",
+        "class2": "pathfinderClassArchtypes",
+        "linkTo": ".pathMenu"
+    },
+    {
+        "system": "pathfinder 3 classArchtypes",
+        "level": 3,
+        "element": "li",
+        "cass1": "title",
+        "class2": "pathClassArchtypes",
+        "data-menu": "pathfinderClassArchtypesLI",
+        "linkTo": ".pathfinderClassArchtypes",
+        "text": "Class Archtypes"
+    },
+    {
+        "system": "pathfinder 4 classArchtypes governess",
+        "level": 4,
+        "element": "li",
+        "class1": "pathfinderClassArchtypesLI",
+        "class2": "titleMenu",
+        "class3": "governess",
+        "href": "pathfinder/class/governess.html",
+        "aLink": ".governess",
+        "aText": "Governess",
+        "title": "Gunslinger Archtype",
+        "linkTo": "pathfinderClassArchtypes",
+"
+    },
     {
         "placement": "pathfinder 2 beastiary",
         "level": 2,
