@@ -157,7 +157,7 @@
         "linkTo": ".pathfinderBeastiary"
     },
     {
-        "system": "pathfinder 4 beastiary grappler",
+        "system": "pathfinder 4 beastiary satchel",
         "level": 4,
         "element": "li",
         "class1": "pathBeastiaryLI",
@@ -221,5 +221,36 @@
         "aLink": ".pathFirearms",
         "aText": "Firearms",
         "linkTo": ".pathfinderItems"
+    },
+    {
+        "placement": "pathfinder 2 magicItems",
+        "level": 2,
+        "element": "ul",
+        "class1": "list",
+        "class2": "pathfinderMagicItems",
+        "linkTo": ".pathMenu"
+    },
+    {
+        "placement": "pathfinder 3 magicItems",
+        "level": 3,
+        "element": "li",
+        "class1": "title",
+        "class2": "pathMagicItemsItems",
+        "data-menu": "pathMagicItemsLI",
+        "linkTo": ".pathfinderMagicItems",
+        "text": "items"
+    },        
+    {
+        "system": "pathfinder 4 magicItems",
+        "level": 4,
+        "element": "li",
+        "class1": "pathMagicItemsLI",
+        "class2": "titleMenu",
+        "class3": "pathArmoredStaff",
+        "href": "pathfinder/magicItems/armoredStaff.html",
+        "aLink": ".pathArmoredStaff",
+        "aText": "Armored Staff",
+        "linkTo": ".pathfinderMagicItems"
     }
+    
 ]
