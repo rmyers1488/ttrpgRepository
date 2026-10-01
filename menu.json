@@ -113,7 +113,6 @@
         "aText": "Governess",
         "title": "Gunslinger Archtype",
         "linkTo": "pathfinderClassArchtypes",
-"
     },
     {
         "placement": "pathfinder 2 beastiary",
@@ -180,4 +179,47 @@
         "aLink":".thievesHand",
         "aText":"Thieves' Hand",
         "linkTo": ".pathfinderBeastiary"
+    },
+    {
+        "placement": "pathfinder 2 items",
+        "level": 2,
+        "element": "ul",
+        "class1": "list",
+        "class2": "pathfinderItems",
+        "linkTo": ".pathMenu"
+    },
+    {
+        "placement": "pathfinder 3 items",
+        "level": 3,
+        "element": "li",
+        "class1": "title",
+        "class2": "pathItems",
+        "data-menu": "pathItemsLI",
+        "linkTo": ".pathfinderItems",
+        "text": "items"
+    },
+    {
+        "system": "pathfinder 4 items weapons",
+        "level": 4,
+        "element": "li",
+        "class1": "pathItemsLI",
+        "class2": "titleMenu",
+        "class3": "pathWeapons",
+        "href": "pathfinder/items/weapons.html",
+        "aLink": ".pathWeapons",
+        "aText": "Weapons",
+        "linkTo": ".pathfinderItems"
+    },
+    {
+        "system": "pathfinder 4 items firearms",
+        "level": 4,
+        "element": "li",
+        "class1": "pathItemsLI",
+        "class2": "titleMenu",
+        "class3": "pathFirearms",
+        "href": "pathfinder/items/firearms.html",
+        "aLink": ".pathFirearms",
+        "aText": "Firearms",
+        "linkTo": ".pathfinderItems"
+    }
 ]
