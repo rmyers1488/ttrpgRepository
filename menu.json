@@ -48,7 +48,7 @@
         "linkTo": ".pathfinderCharacters"
     },
     {
-        "system": "pathfinder 4 character elenore",
+        "system": "pathfinder 4 character dawnStar",
         "level" : 4,
         "element": "li",
         "class1": "pathCharacterLI",
@@ -56,8 +56,32 @@
         "class3": "dawnStar",
         "href":"pathfinder/characters/dawnStar.html",
         "aLink": ".dawnStar",
-        "aText": "DawnStar, Oracle of the Hell Raven",
-        "title": "Oracle 16
+        "aText": "Dawn Star, Oracle of the Hell Raven",
+        "title": "Oracle 16"
+    },
+    {
+        "system": "pathfinder 4 character isamu",
+        "level": 4,
+        "element": "li",
+        "class1": "pathcharacterLI",
+        "class2": "titleMenu",
+        "class3": "isamu",
+        "href":"pathfinder/characters/isamu.html",
+        "aLink":".isamu",
+        "aText":"Isamu, Emerald Spire Bounty Hunter",
+        "title": "Summoner 4, Fighter 4"
+    },
+    {
+        "system": "pathfinder 4 character milli",
+        "level": 4,
+        "element": "li",
+        "class1": "pathcharacterLI",
+        "class2": "titleMenu",
+        "class3": "milli",
+        "href": "pathfinder/characters/milli.html",
+        "aLink": ".milli",
+        "aText": "Milli, Gunsinger Magical Girl"
+        "title": "Vigilante 3 / Vigilante 7 / Vigilante 15
     {
         "placement": "pathfinder 2 beastiary",
         "level": 2,
