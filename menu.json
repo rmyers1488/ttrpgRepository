@@ -28,7 +28,7 @@
         "system": "pathfinder 3 character",
         "level": 3,
         "element": "li",
-        "class1": "title",
+        "cass1": "title",
         "class2": "pathCharacter",
         "data-menu": "pathCharacterLI",
         "linkTo": ".pathfinderCharacters",
