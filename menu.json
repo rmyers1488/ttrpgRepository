@@ -48,6 +48,17 @@
         "linkTo": ".pathfinderCharacters"
     },
     {
+        "system": "pathfinder 4 character elenore",
+        "level" : 4,
+        "element": "li",
+        "class1": "pathCharacterLI",
+        "class2": "titleMenu",
+        "class3": "dawnStar",
+        "href":"pathfinder/characters/dawnStar.html",
+        "aLink": ".dawnStar",
+        "aText": "DawnStar, Oracle of the Hell Raven",
+        "title": "Oracle 16
+    {
         "placement": "pathfinder 2 beastiary",
         "level": 2,
         "element": "ul",
