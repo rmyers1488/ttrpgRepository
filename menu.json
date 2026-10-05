@@ -70,7 +70,8 @@
         "href":"pathfinder/characters/isamu.html",
         "aLink":".pathIsamu",
         "aText":"Isamu, Emerald Spire Bounty Hunter",
-        "title": "Summoner 4, Fighter 4"
+        "title": "Summoner 4, Fighter 4",
+        "linkTo": ".pathfinderCharacters"
     },
     {
         "system": "pathfinder 4 character milli",
@@ -82,7 +83,8 @@
         "href": "pathfinder/characters/milli.html",
         "aLink": ".pathMilli",
         "aText": "Milli, Gunsinger Magical Girl",
-        "title": "Vigilante 3 / Vigilante 7 / Vigilante 15"
+        "title": "Vigilante 3 / Vigilante 7 / Vigilante 15",
+        "linkTo": ".pathfinderCharacters"
     },
     {
         "placement": "pathfinder 2 classArchtypes",
@@ -100,7 +102,8 @@
         "class2": "pathClassArchtypes",
         "data-menu": "pathfinderClassArchtypesLI",
         "linkTo": ".pathfinderClassArchtypes",
-        "text": "Class Archtypes"
+        "text": "Class Archtypes",
+        "linkTo": ".pathfinderClassArchtypes"
     },
     {
         "system": "pathfinder 4 classArchtypes governess",
@@ -124,7 +127,7 @@
         "linkTo": ".pathMenu"
     },
     {
-        "placement": "pathfinder 3 beastiry",
+        "placement": "pathfinder 3 beastiary",
         "level": 3,
         "element": "li",
         "class1": "title",
