@@ -17,6 +17,7 @@ function createMenu(obj) {
     //const element = JSON.parse(obj[1]);
     //console.log('element',element);
     const sidebar = document.querySelector(".sideBar");
+    console.log(obj);
     obj.forEach((line) => {
     // if (line.level === 0){
         const lineElement = line.element ? document.createElement(line.element) : "";
