@@ -57,8 +57,7 @@ function createMenu(obj) {
             lineElement.textContent = line.text;
         }
         document.querySelector(line.linkTo).appendChild(lineElement);
-        console.log("line.aText", line.aText);
-        console.log(1);
+
         if (line.aText) {
             // const = lineAText = `<a href='${line.href}'>${line.aText}</a>`;
             
