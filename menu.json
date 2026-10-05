@@ -103,7 +103,6 @@
         "data-menu": "pathfinderClassArchtypesLI",
         "linkTo": ".pathfinderClassArchtypes",
         "text": "Class Archtypes",
-        "linkTo": ".pathfinderClassArchtypes"
     },
     {
         "system": "pathfinder 4 classArchtypes governess",
@@ -200,7 +199,7 @@
         "class2": "pathItems",
         "data-menu": "pathItemsLI",
         "linkTo": ".pathfinderItems",
-        "text": "items"
+        "text": "Items"
     },
     {
         "system": "pathfinder 4 items weapons",
@@ -242,7 +241,7 @@
         "class2": "pathMagicItemsItems",
         "data-menu": "pathMagicItemsLI",
         "linkTo": ".pathfinderMagicItems",
-        "text": "items"
+        "text": "Magic Items"
     },        
     {
         "system": "pathfinder 4 magicItems",
