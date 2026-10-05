@@ -57,7 +57,8 @@
         "href":"pathfinder/characters/dawnStar.html",
         "aLink": ".pathDawnStar",
         "aText": "Dawn Star, Oracle of the Hell Raven",
-        "title": "Oracle 16"
+        "title": "Oracle 16",
+        "linkTo": ".pathfinderCharacters"
     },
     {
         "system": "pathfinder 4 character isamu",
