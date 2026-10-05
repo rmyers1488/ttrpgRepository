@@ -20,6 +20,7 @@ function createMenu(obj) {
     console.log(obj);
     obj.forEach((line) => {
     // if (line.level === 0){
+        console.log(line.system);
         const lineElement = line.element ? document.createElement(line.element) : "";
         if (line.url) {
             lineElement.setAttribute('src', line.url);        
